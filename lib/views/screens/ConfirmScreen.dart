@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nursrey/constants/constants.dart';
-import 'package:nursrey/views/Widgets/BasicButton.dart';
-import 'package:nursrey/views/Widgets/ConfirmButton.dart';
-import 'package:nursrey/views/screens/QRScreen/QRScreen.dart';
+import 'package:nursery/constants/constants.dart';
+import 'package:nursery/views/Widgets/BasicButton.dart';
+import 'package:nursery/views/Widgets/ConfirmButton.dart';
+import 'package:nursery/views/screens/QRScreen/QRScreen.dart';
 import 'package:sizer/sizer.dart';
 
 class ConfirmScreen extends StatelessWidget {
@@ -37,7 +37,7 @@ class ConfirmScreen extends StatelessWidget {
           left: 8.w,
             top: 8.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.redCol,
               radius: 2.h,
 
             ),),
@@ -45,7 +45,7 @@ class ConfirmScreen extends StatelessWidget {
           right: 16.w,
             top: 10.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.redCol,
               radius: 10.sp,
 
             ),),
@@ -53,7 +53,7 @@ class ConfirmScreen extends StatelessWidget {
           left: 18.w,
             top: 28.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.redCol,
               radius: 8.sp,
 
             ),),
@@ -61,7 +61,7 @@ class ConfirmScreen extends StatelessWidget {
             right: 20.w,
             top: 35.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.redCol,
               radius: 5.sp,
 
             ),),
