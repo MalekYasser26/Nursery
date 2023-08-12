@@ -5,5 +5,5 @@ class AppColors {
   static const Color redCol = Color(0xFFFEA95C);
   static const Color purbleCol = Color(0xFFF6A7D2);
   static const Color lightblueCol = Color(0xFF8AC9FE);
-
 }
+const KPrimaryColor = Color(0xff225C8B);
