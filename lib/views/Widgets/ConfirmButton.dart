@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
-import 'package:nursery/views/screens/BottomNavBarScreen.dart';
+import 'package:nursery/views/screens/QRScreen/QRScreen.dart';
 import 'package:sizer/sizer.dart';
 
 class ConfirmButton extends StatelessWidget {
@@ -12,6 +12,7 @@ class ConfirmButton extends StatelessWidget {
     return Padding(
       padding:  EdgeInsets.symmetric(horizontal: 6.w,vertical :4.h),
       child: InkWell(
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => QRScreen(),)),
         child: Container(
           height: 5.h,
           width:double.infinity,

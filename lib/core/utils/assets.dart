@@ -3,10 +3,8 @@ class AssetsData{
   static const boarding2='assets/images/img_1.png';
   static const boarding3='assets/images/img_2.png';
   static const boarding4='assets/images/img_3.png';
-
   static const girl='assets/images/img_4.png';
   static const boy='assets/images/img_5.png';
-
   static const food='assets/images/img_6.png';
   static const classes='assets/images/img_7.png';
   static const medical='assets/images/img_8.png';
@@ -17,4 +15,11 @@ class AssetsData{
   static const diaper='assets/images/img_13.png';
   static const homework='assets/images/img_14.png';
   static const quiz='assets/images/img_15.png';
+  static const leave='assets/images/HomeScreen/leave.png';
+  static const emergency='assets/images/HomeScreen/emergency.png';
+  static const complaint='assets/images/HomeScreen/complaint.png';
+  static const calendar='assets/images/HomeScreen/calendar.png';
+  static const bring='assets/images/HomeScreen/bring.png';
+  static const take='assets/images/HomeScreen/take.png';
+
 }
