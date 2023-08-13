@@ -11,7 +11,6 @@ class OnBoardingBody extends StatefulWidget {
   @override
   State<OnBoardingBody> createState() => _OnBoardingBodyState();
 }
-
 class _OnBoardingBodyState extends State<OnBoardingBody> {
   final pageController = PageController();
   int currentIndex = 0 ;
