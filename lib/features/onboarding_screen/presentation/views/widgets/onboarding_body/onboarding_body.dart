@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
 import 'package:nursery/features/onboarding_screen/presentation/models/onboarding_model.dart';
+import 'package:nursery/views/screens/LoginScreen/LoginScreen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -70,7 +71,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                 height:3.5.h,),
                InkWell(
                  onTap: () {
-                     // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginView()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginScreen()));
                  },
                  child: Container(
                    height:5.h,
@@ -79,7 +80,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                        borderRadius: BorderRadius.circular(8),
                        color: KPrimaryColor
                    ),
-                   child:   Center(
+                   child: Center(
                      child: Text("Login",
                       style: GoogleFonts.montserrat(
                         textStyle: const TextStyle(

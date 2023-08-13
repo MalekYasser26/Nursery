@@ -51,11 +51,16 @@ class QRScreen extends StatelessWidget {
               ),
             ),
           ),
-          Column(
-            children: [
-              BasicButton(builder: (context) => HomeScreen(),text: "Download QR Code"),
-              BasicButtonRevColor(builder: (context) => HomeScreen(),)
-            ],
+          Padding(
+            padding: EdgeInsets.only(left: 6.w, right: 6.w, bottom: 4.h),
+            child: Column(
+              children: [
+                BasicButton(builder: (context) => HomeScreen(),text: "Download QR Code"),
+                SizedBox(height: 2.h,),
+                BasicButtonRevColor(builder: (context) => HomeScreen(),
+                  color: Colors.transparent,Textcolor: AppColors.blueCol,TextSt: "Return to home",borderColor: AppColors.blueCol,)
+              ],
+            ),
           ),
         ],
       ),
