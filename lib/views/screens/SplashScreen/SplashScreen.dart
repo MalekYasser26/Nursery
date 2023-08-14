@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nursery/features/onboarding_screen/presentation/views/onboarding_view.dart';
 import 'package:nursery/views/screens/LoginScreen/LoginScreen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     BottomLogoAnimationController.forward();
     ShapesAnimationController.forward();
     Future.delayed(Duration(milliseconds:4300 ),
-          () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>LoginScreen() ,)),
+          () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>OnBoardingView() ,)),
     );
   }
 

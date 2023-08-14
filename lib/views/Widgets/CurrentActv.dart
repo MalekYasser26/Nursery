@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
-class ImageTextSubtextWidget extends StatelessWidget {
+class CurrentActv extends StatelessWidget {
   final String imagePath;
   final String text;
   final String date;
   final String subtext;
 
-  ImageTextSubtextWidget({
+  CurrentActv({
     required this.imagePath,
     required this.text,
     required this.date,
@@ -59,6 +59,7 @@ class ImageTextSubtextWidget extends StatelessWidget {
 
           ],
         ),
+
 
       ],
     );

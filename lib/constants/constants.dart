@@ -16,7 +16,16 @@ List<String> HomeScreenImg = [
   AssetsData.take,
   AssetsData.bring,
 
-];List<String> HomeScreenTXT = [
+];
+List<String> GalleryList = [
+  AssetsData.gal1,
+  AssetsData.gal2,
+  AssetsData.gal3,
+
+
+];
+
+List<String> HomeScreenTXT = [
   "Early leave request",
   "Emergency call",
   "Issue a complaint",

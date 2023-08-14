@@ -69,6 +69,7 @@ flutter:
     - assets/images/
     - assets/images/Login/
     - assets/images/HomeScreen/
+    - assets/images/Gallery/
 
   #   - images/a_dot_ham.jpeg
 

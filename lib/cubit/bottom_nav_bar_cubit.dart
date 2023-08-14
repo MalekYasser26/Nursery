@@ -2,10 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:meta/meta.dart';
-import 'package:nursery/views/screens/ActivitesScreen.dart';
 import 'package:nursery/views/screens/CalendarScreen.dart';
 import 'package:nursery/views/screens/SettingsScreen.dart';
 
+import '../features/onboarding_screen/presentation/views/activities_View/activities-view.dart';
 import '../views/screens/HomeScreen/HomeScreen.dart';
 
 part 'bottom_nav_bar_state.dart';
@@ -18,7 +18,7 @@ class BottomNavBarCubit extends Cubit<BottomNavBarState> {
   }
   List<Widget>Screens = [
     HomeScreen(),
-    ActivitiesScreen(),
+    ActivitiesView(),
     CalendarScreen(),
     SettingsScreen()
   ];

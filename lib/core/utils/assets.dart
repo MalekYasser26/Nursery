@@ -21,5 +21,8 @@ class AssetsData{
   static const calendar='assets/images/HomeScreen/calendar.png';
   static const bring='assets/images/HomeScreen/bring.png';
   static const take='assets/images/HomeScreen/take.png';
-
+  static const gal1='assets/images/Gallery/Gallery1.png';
+  static const gal2='assets/images/Gallery/Gallery2.png';
+  static const gal3='assets/images/Gallery/Gallery3.png';
+  static const logo='assets/images/img_16.png';
 }

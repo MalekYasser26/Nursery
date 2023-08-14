@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
 import 'package:nursery/core/utils/assets.dart';
+import 'package:nursery/views/Widgets/AnnouncementWidget.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
+import 'package:nursery/views/Widgets/GalleryWidget.dart';
 import 'package:nursery/views/Widgets/RequestWidgets.dart';
 import 'package:nursery/views/screens/QRScreen/QRScreen.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Widgets/CardWidget.dart';
+import '../../Widgets/CurrentActv.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,80 +18,88 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          leadingWidth: 60.w,
-          automaticallyImplyLeading: false,
-          elevation: 0,
-          backgroundColor: Colors.white,
-          leading: Container(
-              padding: EdgeInsets.only(top: 1.h,),
-              child: Row(
-                children: [
-                  SizedBox(width: 6.w,),
-                  Image.asset('assets/images/Login/LogoFull.png'),
-                  SizedBox(width: 3.w,),
-
-                  Text("Rouse Berry",style: GoogleFonts.josefinSans(color:AppColors.blueCol,fontSize: 15.sp),)
-                ],
-              )),
-          actions: [
-            Padding(
-              padding:  EdgeInsets.all(1.0.h),
-              child: Container(
-
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xffDDDDDD),
-                      blurRadius: 6.0,
-                      spreadRadius: 2.0,
-                      offset: Offset(0.0, 0.0),
-                    )
-                  ],
-                ),
-                child: Icon(Icons.notifications,color:AppColors.blueCol,size: 24.sp),
-              ),
-            ),
-            SizedBox(width: 5.w,)
-          ],
-        ),
-        backgroundColor: Colors.white,
         body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 4.0.w),
+            padding:  EdgeInsets.symmetric(horizontal: 4.w),
             child: Stack(
               children:[
                 Container(
-            height: MediaQuery.of(context).size.height,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                      children: [
                         SizedBox(
-                  height: 4.h,
+                  height: 1.9.h,
               ),
                         Column(
                   children: [
-                    Row(children: [
-                      Text("Please select your child",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w600),),
-                      Spacer(),
-                      Text("15 Feb 2023",style: GoogleFonts.poppins(color: Colors.grey,fontWeight: FontWeight.w400),),
-                    ],),
                     Row(
                       children: [
-                        Image.asset(AssetsData.girl,width: 43.w,height: 14.h),
-                        SizedBox(width: 5.w,),
-                        Image.asset(AssetsData.boy,width: 43.w,height: 20.h,),
+                        Image.asset('assets/images/name.png',height: 10.h,width: 10.w,),
+                        SizedBox(width: 2.w,),
+                        Text('Rouse Berry',style: GoogleFonts.josefinSans(
+                            textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
+                        const Spacer(),
+                        InkWell(
+                          onTap: (){
+                          },
+                          child: Container(
+                            height: 4.h,
+                            width: 8.w,
+                            decoration:   BoxDecoration(
+                              borderRadius: BorderRadius.circular(4),
+                              color: Colors.white,
+                              boxShadow:  [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(.3),
+                                  blurRadius: 5.0, // soften the shadow
+                                  spreadRadius: 1, //extend the shadow
+                                  offset: const Offset(
+                                    2.0, // Move to right 5  horizontally
+                                    2.0, // Move to bottom 5 Vertically
+                                  ),
+                                )
+                              ],
+                            ),
+                            child: Image.asset('assets/images/notification.png',),
+                          ),
+                        )
                       ],
-
-                    )
-
+                    ),
+                    Row(
+                      children: [
+                        Text("Please select your child",
+                          style: GoogleFonts.poppins(
+                              textStyle: const TextStyle(fontWeight: FontWeight.w600,fontSize: 16)
+                          ),),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 15.h,
+                          width: 42.w,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8)
+                          ),
+                          child: Image.asset('assets/images/Girl.png',width:double.infinity),
+                        ),
+                        const Spacer(),
+                        Container(
+                          height: 15.h,
+                          width: 42.w,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+                          child: Image.asset('assets/images/boy.png',width: double.infinity,),
+                        )
+                      ],
+                    ),
                   ],
               ),
-                       Text("What's Malak doing now ?",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w600),),
+                       SizedBox(height : 1.h),
+                       Text("What's Malak doing now ?",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w600 , fontSize: 15.sp),),
+                       SizedBox(height : 1.h),
                        Container(
                          decoration: const BoxDecoration(
                            color: Colors.white,
@@ -107,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                          ),
                          height: 17.h,
                          width: double.infinity,
-                         child: ImageTextSubtextWidget(
+                         child: CurrentActv(
                            date: "09:00 am - 10:00 am",
                            imagePath: AssetsData.boarding1,
                            text: 'Water color painting class',
@@ -135,14 +145,33 @@ class HomeScreen extends StatelessWidget {
                            );
                          },
                        ),
+                       SizedBox(height: 1.h,),
                        Row(
                          children: [
-                           Text("Gallery",style: GoogleFonts.poppins(fontSize: 15.sp),),
+                           Text("Gallery",style: GoogleFonts.poppins(fontSize: 15.sp,fontWeight: FontWeight.w600),),
                            Spacer(),
-                           Text("See all",style: GoogleFonts.poppins(fontSize: 15.sp,color: AppColors.blueCol),),
+                           Text("See all",style: GoogleFonts.poppins(fontSize: 13.sp,color: AppColors.blueCol),),
 
                          ],
                        ),
+                       SizedBox(height: 2.h,),
+                       SizedBox(
+                         height: 15.h,
+                         child: ListView.separated(
+                           shrinkWrap: true,
+                           scrollDirection: Axis.horizontal,
+                             itemBuilder:(context, index) =>  GalleryWidget(Imgpath: GalleryList[index]),
+                             separatorBuilder: (context, index) => SizedBox(width: 3.w,height: 2.h,),
+                             itemCount: 3),
+                       ),
+                       SizedBox(height: 2.h,),
+                       Text("Announcements",style: GoogleFonts.poppins(fontSize: 15.sp,fontWeight: FontWeight.w600),),
+                       AnnounceWidget(imagePath: AssetsData.logo, text: "Next parenting meeting", date: "18 Feb 2023",time: "10:00 am",)
+                      , AnnounceWidget(imagePath: AssetsData.logo, text: "Children’s Day", date: "15 Mar 2023",time: "08:00 am",)
+                     ,  AnnounceWidget(imagePath: AssetsData.logo, text: "Annual Day", date: "18 Feb 2023",time: "08:00 am",)
+
+
+
 
 
 
@@ -152,8 +181,8 @@ class HomeScreen extends StatelessWidget {
                 ),
 
                 Positioned(
-                  left: 36.w,
-                  top: 10.h,
+                  left: 35.w,
+                  top: 16.h,
                   child : Icon(Icons.check_box,color:AppColors.blueCol,),),
               ],
             ),

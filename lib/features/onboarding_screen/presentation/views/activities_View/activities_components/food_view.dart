@@ -174,7 +174,7 @@ class FoodView extends StatelessWidget {
                                                       Image.asset('assets/images/img_14.png'),
                                                       Column(
                                                         children: [
-                                                          const Row(
+                                                           Row(
                                                             children: [
                                                               Text("Breakfast"),
                                                               Spacer(),
@@ -196,7 +196,7 @@ class FoodView extends StatelessWidget {
                                                   Row(
                                                     children: [
                                                       Image.asset('assets/images/img_16.png'),
-                                                      const Column(
+                                                       Column(
                                                         children: [
                                                           Row(
                                                             children: [
@@ -221,7 +221,7 @@ class FoodView extends StatelessWidget {
                                                       Image.asset('assets/images/img_17.png',width: 15.w,height: 15.h,),
                                                       Column(
                                                         children: [
-                                                          const Row(
+                                                           Row(
                                                             children: [
                                                               Text("Lunch"),
                                                               Spacer(),

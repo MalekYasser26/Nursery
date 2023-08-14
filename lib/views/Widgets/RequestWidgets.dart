@@ -19,11 +19,11 @@ class RequestWidgets extends StatelessWidget {
            Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));
         
         } else if (index==1){
-          Navigator.push(context, MaterialPageRoute(builder: (context) =>HomeScreen() ,));
+          Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));
         }else if (index==2){
-          Navigator.push(context, MaterialPageRoute(builder: (context) =>HomeScreen() ,));
+          Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));
         }else if (index==3){
-          Navigator.push(context, MaterialPageRoute(builder: (context) =>HomeScreen() ,));
+          Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));
 
         }else if (index==4 || index ==5){
           Navigator.push(context, MaterialPageRoute(builder: (context) =>TakeBringChildScreen(TakeOrBring: HomeScreenTXT[index]) ,));
