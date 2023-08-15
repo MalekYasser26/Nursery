@@ -12,7 +12,7 @@ class BottleView extends StatelessWidget {
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(15.0),
             child: Column(
               children: [
                 Row(

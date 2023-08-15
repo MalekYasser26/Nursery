@@ -12,7 +12,7 @@ class PottyView extends StatelessWidget {
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(15.0),
             child: Column(
               children: [
                 Row(
@@ -26,7 +26,7 @@ class PottyView extends StatelessWidget {
                       onTap: (){
                       },
                       child: Container(
-                        height: 6.h,
+                        height: 4.h,
                         width: 8.w,
                         decoration:   BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
