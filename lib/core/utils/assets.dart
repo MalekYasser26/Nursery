@@ -25,4 +25,10 @@ class AssetsData{
   static const gal2='assets/images/Gallery/Gallery2.png';
   static const gal3='assets/images/Gallery/Gallery3.png';
   static const logo='assets/images/img_16.png';
+  static const reportImg1='assets/images/DailyReport/img.png';
+  static const reportImg2='assets/images/DailyReport/img_1.png';
+  static const reportImg3='assets/images/DailyReport/img_2.png';
+  static const reportImg4='assets/images/DailyReport/img_3.png';
+  static const reportImg5='assets/images/DailyReport/img_4.png';
+
 }

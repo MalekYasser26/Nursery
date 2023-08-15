@@ -71,6 +71,7 @@ flutter:
     - assets/images/Login/
     - assets/images/HomeScreen/
     - assets/images/Gallery/
+    - assets/images/DailyReport/
 
   #   - images/a_dot_ham.jpeg
 

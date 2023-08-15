@@ -45,7 +45,7 @@ class ConfirmScreen extends StatelessWidget {
           left: 7.w,
             top: 24.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.lightgreenCol,
               radius: 2.h,
 
             ),),
@@ -53,7 +53,7 @@ class ConfirmScreen extends StatelessWidget {
           right: 16.w,
             top: 27.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.lightgreenCol,
               radius: 10.sp,
 
             ),),
@@ -61,7 +61,7 @@ class ConfirmScreen extends StatelessWidget {
           left: 15.w,
             top: 38.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.lightgreenCol,
               radius: 8.sp,
 
             ),),
@@ -69,7 +69,7 @@ class ConfirmScreen extends StatelessWidget {
             right: 20.w,
             top: 45.h,
             child: CircleAvatar(
-              backgroundColor: AppColors.greenCol,
+              backgroundColor: AppColors.lightgreenCol,
               radius: 5.sp,
 
             ),),
