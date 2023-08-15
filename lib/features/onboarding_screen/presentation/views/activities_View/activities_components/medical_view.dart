@@ -75,6 +75,7 @@ class MedicalView extends StatelessWidget {
                     children: [
                       IconButton(onPressed: (){}, icon: const Icon(Icons.calendar_month,color: Colors.grey,)) ,
                       const Text("04 Feb 2023 - 16 Feb 2023",),
+                      const Spacer(),
                       IconButton(onPressed: (){}, icon: const Icon(Icons.keyboard_arrow_down,size: 35,weight: 5,))
                     ],
                   ),
@@ -151,7 +152,10 @@ class MedicalView extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Image.asset('assets/images/guaifenesin.png',height: 10.h,width: 10.w,),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 4.0,right: 4),
+                                          child: Image.asset('assets/images/guaifenesin.png',height: 10.h,width: 10.w,),
+                                        ),
                                         Expanded(
                                           flex: 1,
                                           child: Padding(
@@ -168,26 +172,32 @@ class MedicalView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
-                                                      padding: const EdgeInsets.all(4),
+                                                      margin: const EdgeInsets.only(right: 4),
+                                                      padding: const EdgeInsets.all(3),
                                                       height: 3.h,
                                                       width: 23.w,
                                                       decoration:   BoxDecoration(
                                                           color: const Color(0xff32A048),
                                                           borderRadius: BorderRadius.circular(4)
                                                       ),
-                                                      child: Row(
-                                                        children: [
-                                                          Image.asset("assets/images/done.png",width: 4.w,),
-                                                          SizedBox(width: 2.w,),
-                                                          Text("Taken",
-                                                            style: GoogleFonts.poppins(
-                                                                textStyle: const TextStyle(
-                                                                    fontWeight: FontWeight.w400,fontSize: 12,
-                                                                    color: Color(0xffFFFFFF)
-                                                                )
-                                                            ),)
-                                                        ],
+                                                      child: Center(
+                                                        child: Row(
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.only(left: 4.0),
+                                                              child: Image.asset("assets/images/done.png",width: 4.w,),
+                                                            ),
+                                                            SizedBox(width: 2.w,),
+                                                            Text("Taken",
+                                                              style: GoogleFonts.poppins(
+                                                                  textStyle: const TextStyle(
+                                                                      fontWeight: FontWeight.w400,fontSize: 12,
+                                                                      color: Color(0xffFFFFFF)
+                                                                  )
+                                                              ),)
+                                                          ],
 
+                                                        ),
                                                       ),
                                                     ),
                                                   ],
@@ -237,7 +247,10 @@ class MedicalView extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Image.asset('assets/images/antibiotics.png',height: 10.h,width: 10.w,),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 4.0,right: 4),
+                                          child: Image.asset('assets/images/antibiotics.png',height: 10.h,width: 10.w,),
+                                        ),
                                         Expanded(
                                           flex: 1,
                                           child: Padding(
@@ -254,26 +267,32 @@ class MedicalView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
-                                                      padding: const EdgeInsets.all(4),
+                                                      margin: const EdgeInsets.only(right: 4),
+                                                      padding: const EdgeInsets.all(3),
                                                       height: 3.h,
                                                       width: 23.w,
                                                       decoration:   BoxDecoration(
                                                           color: const Color(0xff32A048),
                                                           borderRadius: BorderRadius.circular(4)
                                                       ),
-                                                      child: Row(
-                                                        children: [
-                                                          Image.asset("assets/images/done.png",width: 4.w,),
-                                                          SizedBox(width: 2.w,),
-                                                          Text("Taken",
-                                                            style: GoogleFonts.poppins(
-                                                                textStyle: const TextStyle(
-                                                                    fontWeight: FontWeight.w400,fontSize: 12,
-                                                                    color: Color(0xffFFFFFF)
-                                                                )
-                                                            ),)
-                                                        ],
+                                                      child: Center(
+                                                        child: Row(
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.only(left: 4.0),
+                                                              child: Image.asset("assets/images/done.png",width: 4.w,),
+                                                            ),
+                                                            SizedBox(width: 2.w,),
+                                                            Text("Taken",
+                                                              style: GoogleFonts.poppins(
+                                                                  textStyle: const TextStyle(
+                                                                      fontWeight: FontWeight.w400,fontSize: 12,
+                                                                      color: Color(0xffFFFFFF)
+                                                                  )
+                                                              ),)
+                                                          ],
 
+                                                        ),
                                                       ),
                                                     ),
                                                   ],
@@ -344,7 +363,10 @@ class MedicalView extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Image.asset('assets/images/penicillin.png',height: 10.h,width: 10.w,),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 4.0,right: 4),
+                                          child: Image.asset('assets/images/penicillin.png',height: 10.h,width: 10.w,),
+                                        ),
                                         Expanded(
                                           flex: 1,
                                           child: Padding(
@@ -361,6 +383,7 @@ class MedicalView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
+                                                      margin: const EdgeInsets.only(right: 4),
                                                       padding: const EdgeInsets.all(4),
                                                       height: 3.h,
                                                       width: 32.w,
@@ -368,19 +391,24 @@ class MedicalView extends StatelessWidget {
                                                           color: const Color(0xffD32323),
                                                           borderRadius: BorderRadius.circular(4)
                                                       ),
-                                                      child: Row(
-                                                        children: [
-                                                          Image.asset("assets/images/false.png",width: 4.w,),
-                                                          SizedBox(width: 2.w,),
-                                                          Text("Hasn't taken",
-                                                            style: GoogleFonts.poppins(
-                                                                textStyle: const TextStyle(
-                                                                    fontWeight: FontWeight.w400,fontSize: 12,
-                                                                    color: Color(0xffFFFFFF)
-                                                                )
-                                                            ),)
-                                                        ],
+                                                      child: Center(
+                                                        child: Row(
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.only(left: 4.0),
+                                                              child: Image.asset("assets/images/false.png",width: 4.w,),
+                                                            ),
+                                                            SizedBox(width: 2.w,),
+                                                            Text("Hasn't taken",
+                                                              style: GoogleFonts.poppins(
+                                                                  textStyle: const TextStyle(
+                                                                      fontWeight: FontWeight.w400,fontSize: 12,
+                                                                      color: Color(0xffFFFFFF)
+                                                                  )
+                                                              ),)
+                                                          ],
 
+                                                        ),
                                                       ),
                                                     ),
                                                   ],
@@ -430,7 +458,10 @@ class MedicalView extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Image.asset('assets/images/aquaphor.png',height: 10.h,width: 10.w,),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 4.0,right: 4),
+                                          child: Image.asset('assets/images/aquaphor.png',height: 10.h,width: 10.w,),
+                                        ),
                                         Expanded(
                                           flex: 1,
                                           child: Padding(
@@ -447,26 +478,32 @@ class MedicalView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
-                                                      padding: const EdgeInsets.all(4),
+                                                      margin: const EdgeInsets.only(right: 4),
+                                                      padding: const EdgeInsets.all(3),
                                                       height: 3.h,
                                                       width: 23.w,
                                                       decoration:   BoxDecoration(
                                                           color: const Color(0xff32A048),
                                                           borderRadius: BorderRadius.circular(4)
                                                       ),
-                                                      child: Row(
-                                                        children: [
-                                                          Image.asset("assets/images/done.png",width: 4.w,),
-                                                          SizedBox(width: 2.w,),
-                                                          Text("Taken",
-                                                            style: GoogleFonts.poppins(
-                                                                textStyle: const TextStyle(
-                                                                    fontWeight: FontWeight.w400,fontSize: 12,
-                                                                    color: Color(0xffFFFFFF)
-                                                                )
-                                                            ),)
-                                                        ],
+                                                      child: Center(
+                                                        child: Row(
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.only(left: 4.0),
+                                                              child: Image.asset("assets/images/done.png",width: 4.w,),
+                                                            ),
+                                                            SizedBox(width: 2.w,),
+                                                            Text("Taken",
+                                                              style: GoogleFonts.poppins(
+                                                                  textStyle: const TextStyle(
+                                                                      fontWeight: FontWeight.w400,fontSize: 12,
+                                                                      color: Color(0xffFFFFFF)
+                                                                  )
+                                                              ),)
+                                                          ],
 
+                                                        ),
                                                       ),
                                                     ),
                                                   ],

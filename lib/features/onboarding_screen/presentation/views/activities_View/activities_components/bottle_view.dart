@@ -75,6 +75,7 @@ class BottleView extends StatelessWidget {
                     children: [
                       IconButton(onPressed: (){}, icon: const Icon(Icons.calendar_month,color: Colors.grey,)) ,
                       const Text("04 Feb 2023 - 16 Feb 2023",),
+                      const Spacer(),
                       IconButton(onPressed: (){}, icon: const Icon(Icons.keyboard_arrow_down,size: 35,weight: 5,))
                     ],
                   ),
@@ -150,6 +151,7 @@ class BottleView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
+                                                      margin: const EdgeInsets.only(right: 4),
                                                       padding: const EdgeInsets.all(4),
                                                       height: 3.h,
                                                       width: 23.w,
@@ -240,6 +242,7 @@ class BottleView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
+                                                      margin: const EdgeInsets.only(right: 4),
                                                       padding: const EdgeInsets.all(4),
                                                       height: 3.h,
                                                       width: 23.w,
@@ -330,6 +333,7 @@ class BottleView extends StatelessWidget {
                                                           )),),
                                                     const Spacer(),
                                                     Container(
+                                                      margin: const EdgeInsets.only(right: 4),
                                                       padding: const EdgeInsets.all(4),
                                                       height: 3.h,
                                                       width: 32.w,
@@ -354,29 +358,32 @@ class BottleView extends StatelessWidget {
                                                     ),
                                                   ],
                                                 ),
-                                                Row(
-                                                  children: [
-                                                    Padding(
-                                                      padding: const EdgeInsets.all(2.5),
-                                                      child: Image.asset("assets/images/greyclock.png",width: 5.w,),
-                                                    ),
-                                                    Text("02:00 pm",
-                                                      style: GoogleFonts.poppins(
-                                                          textStyle: const TextStyle(
-                                                              fontSize: 12,fontWeight: FontWeight.w400,
-                                                              color: Color(0xffA7A7A7)
-                                                          )
-                                                      ),),
-                                                    const Spacer(),
-                                                    Text("Remaining: ",
-                                                      style: GoogleFonts.poppins(
-                                                          textStyle: const TextStyle(
-                                                              fontSize: 12,fontWeight: FontWeight.w400,
-                                                              color: Color(0xffA7A7A7)
-                                                          )
-                                                      ),),
-                                                    const Text("0.5 ml",style: TextStyle(color: Colors.black),)
-                                                  ],
+                                                Padding(
+                                                  padding: const EdgeInsets.only(right: 4.0),
+                                                  child: Row(
+                                                    children: [
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(2.5),
+                                                        child: Image.asset("assets/images/greyclock.png",width: 5.w,),
+                                                      ),
+                                                      Text("02:00 pm",
+                                                        style: GoogleFonts.poppins(
+                                                            textStyle: const TextStyle(
+                                                                fontSize: 12,fontWeight: FontWeight.w400,
+                                                                color: Color(0xffA7A7A7)
+                                                            )
+                                                        ),),
+                                                      const Spacer(),
+                                                      Text("Remaining: ",
+                                                        style: GoogleFonts.poppins(
+                                                            textStyle: const TextStyle(
+                                                                fontSize: 12,fontWeight: FontWeight.w400,
+                                                                color: Color(0xffA7A7A7)
+                                                            )
+                                                        ),),
+                                                      const Text("0.5 ml",style: TextStyle(color: Colors.black),)
+                                                    ],
+                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -401,4 +408,5 @@ class BottleView extends StatelessWidget {
     );
   }
 }
+
 
