@@ -9,6 +9,7 @@ class AppColors {
   static const Color lightgreenCol = Color(0xFF8BD399);
   static const Color orangeCol = Color(0xFFFEA95C);
   static const Color pinkCol = Color(0xFFD86BA7);
+  static const Color redCol = Color(0xFFD32323);
 }
 List<String> HomeScreenImg = [
   AssetsData.leave,
