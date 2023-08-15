@@ -17,7 +17,7 @@ class PottyView extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset('assets/images/img_12.png',height: 10.h,width: 10.w,),
+                    Image.asset('assets/images/name.png',height: 10.h,width: 10.w,),
                     SizedBox(width: 2.w,),
                     Text('Rouse Berry',style: GoogleFonts.josefinSans(
                         textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
@@ -26,7 +26,7 @@ class PottyView extends StatelessWidget {
                       onTap: (){
                       },
                       child: Container(
-                        height: 4.h,
+                        height: 6.h,
                         width: 8.w,
                         decoration:   BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
@@ -43,7 +43,7 @@ class PottyView extends StatelessWidget {
                             )
                           ],
                         ),
-                        child: Image.asset('assets/images/img_13.png',),
+                        child: Image.asset('assets/images/notification.png',),
                       ),
                     )
                   ],
@@ -84,62 +84,106 @@ class PottyView extends StatelessWidget {
                 ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     shrinkWrap: true,
-                    itemCount: 2,
+                    itemCount: 1,
                     itemBuilder: (BuildContext context, int index) {
-                      return GestureDetector(
-                          onTap: () {
-                            // Navigator.pushNamed(context, details[index]['navegate']);
-                            // Navigator.push(context, MaterialPageRoute(builder: (context)=>details[index]['navegate']));
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8.0,bottom: 8),
-                                  child: Container(
-                                      height: 8.h,
-                                      width: 150.w,
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow:  [
-                                          BoxShadow(
-                                            color: Colors.grey.withOpacity(.3),
-                                            blurRadius: 5.0, // soften the shadow
-                                            spreadRadius: 1, //extend the shadow
-                                            offset: const Offset(
-                                              2.0, // Move to right 5  horizontally
-                                              2.0, // Move to bottom 5 Vertically
-                                            ),
-                                          )
-                                        ],
-                                        borderRadius: BorderRadius.circular(8.sp),
-                                      ),
-                                      child:  Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(". Time: 10:30 min",style:GoogleFonts.poppins(
-                                              textStyle: const TextStyle(
-                                                  fontWeight: FontWeight.w500,
-                                                  fontSize: 16
-                                              )
-                                          )
-
-                                          ),
-                                          Text(". Duratiob: 05:30 min",style:GoogleFonts.poppins(
-                                              textStyle: const TextStyle(
-                                                  fontWeight: FontWeight.w500,
-                                                  fontSize: 16
-                                              )
-                                          ))
-                                        ],
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0,bottom: 8),
+                              child: Container(
+                                  height: 10.h,
+                                  width: 150.w,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    boxShadow:  [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(.3),
+                                        blurRadius: 5.0, // soften the shadow
+                                        spreadRadius: 1, //extend the shadow
+                                        offset: const Offset(
+                                          2.0, // Move to right 5  horizontally
+                                          2.0, // Move to bottom 5 Vertically
+                                        ),
                                       )
+                                    ],
+                                    borderRadius: BorderRadius.circular(8.sp),
                                   ),
-                                ),
-                                Image.asset("assets/images/img_20.png")
-                              ],
+                                  child:  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(" . Time: 10:30 min",style:GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 16
+                                            )
+                                        )
+
+                                        ),
+                                        Text(" . Duratiob: 05:30 min",style:GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 16
+                                            )
+                                        ))
+                                      ],
+                                    ),
+                                  )
+                              ),
                             ),
-                          ));
+                            Image.asset("assets/images/potty1.png"),
+                            SizedBox(height: 3.h,),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0,bottom: 8),
+                              child: Container(
+                                  height: 10.h,
+                                  width: 150.w,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    boxShadow:  [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(.3),
+                                        blurRadius: 5.0, // soften the shadow
+                                        spreadRadius: 1, //extend the shadow
+                                        offset: const Offset(
+                                          2.0, // Move to right 5  horizontally
+                                          2.0, // Move to bottom 5 Vertically
+                                        ),
+                                      )
+                                    ],
+                                    borderRadius: BorderRadius.circular(8.sp),
+                                  ),
+                                  child:  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(" . Time: 10:30 min",style:GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 16
+                                            )
+                                        )
+
+                                        ),
+                                        Text(" . Duratiob: 05:30 min",style:GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 16
+                                            )
+                                        ))
+                                      ],
+                                    ),
+                                  )
+                              ),
+                            ),
+                            Image.asset("assets/images/potty2.png")
+                          ],
+                        ),
+                      );
                     }
                 )
               ],
@@ -150,3 +194,4 @@ class PottyView extends StatelessWidget {
     );
   }
 }
+
