@@ -71,7 +71,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                 height:3.5.h,),
                InkWell(
                  onTap: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginScreen()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const LoginScreen()));
                  },
                  child: Container(
                    height:5.h,

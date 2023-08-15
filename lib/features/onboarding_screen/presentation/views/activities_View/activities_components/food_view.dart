@@ -12,12 +12,12 @@ class FoodView extends StatelessWidget {
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(15.0),
             child: Column(
               children: [
                 Row(
                   children: [
-                    Image.asset('assets/images/img_12.png',height: 10.h,width: 10.w,),
+                    Image.asset('assets/images/name.png',height: 10.h,width: 10.w,),
                     SizedBox(width: 2.w,),
                     Text('Rouse Berry',style: GoogleFonts.josefinSans(
                         textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
@@ -43,7 +43,7 @@ class FoodView extends StatelessWidget {
                             )
                           ],
                         ),
-                        child: Image.asset('assets/images/img_13.png',),
+                        child: Image.asset('assets/images/notification.png',),
                       ),
                     )
                   ],
@@ -105,154 +105,232 @@ class FoodView extends StatelessWidget {
                 ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     shrinkWrap: true,
-                    itemCount: 7,
+                    itemCount: 2,
                     itemBuilder: (BuildContext context, int index) {
-                      return GestureDetector(
-                          onTap: () {
-                            // Navigator.pushNamed(context, details[index]['navegate']);
-                            // Navigator.push(context, MaterialPageRoute(builder: (context)=>details[index]['navegate']));
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Row(
                               children: [
-                                Row(
-                                  children: [
-                                    Text("19 Feb 2023 (Sunday)",
-                                      style: GoogleFonts.poppins(
-                                          textStyle: const TextStyle(
-                                              fontWeight: FontWeight.w400,fontSize: 14,
-                                              color: Color(0xff1E1E1E)
-                                          )
-                                      ),),
-                                  ],
-                                ),
-                                Container(
-                                  height: 30.h,
-                                  width: 150.w,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow:  [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(.3),
-                                        blurRadius: 5.0, // soften the shadow
-                                        spreadRadius: 1, //extend the shadow
-                                        offset: const Offset(
-                                          2.0, // Move to right 5  horizontally
-                                          2.0, // Move to bottom 5 Vertically
-                                        ),
+                                Text("19 Feb 2023 (Sunday)",
+                                  style: GoogleFonts.poppins(
+                                      textStyle: const TextStyle(
+                                          fontWeight: FontWeight.w400,fontSize: 14,
+                                          color: Color(0xff1E1E1E)
                                       )
-                                    ],
-                                    borderRadius: BorderRadius.circular(8.sp),
-                                  ),
-                                  child: Center(
-                                    child:Column(
-                                      children: [
-                                        Column(
-                                          children: [
-                                            Container(
-                                              height: 150.h,
-                                              width: 60.w,
-                                              decoration: BoxDecoration(
-                                                color: Colors.red,
-                                                boxShadow:  [
-                                                  BoxShadow(
-                                                    color: Colors.grey.withOpacity(.3),
-                                                    blurRadius: 5.0, // soften the shadow
-                                                    spreadRadius: 1, //extend the shadow
-                                                    offset: const Offset(
-                                                      2.0, // Move to right 5  horizontally
-                                                      0.0, // Move to bottom 5 Vertically
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                              child: Column(
-                                                children: [
-                                                  Row(
-                                                    children: [
-                                                      Image.asset('assets/images/img_14.png'),
-                                                      Column(
-                                                        children: [
-                                                           Row(
-                                                            children: [
-                                                              Text("Breakfast"),
-                                                              Spacer(),
-                                                              Icon(Icons.access_time_sharp),
-                                                              Text("10:40 am")
-                                                            ],
-                                                          ),
-                                                          const Text("Egg and Toast with butter and jam",style: TextStyle(color: Colors.grey),),
-                                                          Image.asset('assets/images/img_15.png')
-                                                        ],
-                                                      )
-
-                                                    ],
-                                                  ),
-                                                  const Divider(
-                                                    color: Colors.grey,
-                                                    thickness: 2,
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Image.asset('assets/images/img_16.png'),
-                                                       Column(
-                                                        children: [
-                                                          Row(
-                                                            children: [
-                                                              Text("Snacks"),
-                                                              Spacer(),
-                                                              Icon(Icons.access_time_sharp),
-                                                              Text("12:10 pm")
-                                                            ],
-                                                          ),
-                                                          Text("Popcorn",style: TextStyle(color: Colors.grey),),
-                                                        ],
-                                                      )
-
-                                                    ],
-                                                  ),
-                                                  const Divider(
-                                                    color: Colors.grey,
-                                                    thickness: 2,
-                                                  ),
-                                                  Row(
-                                                    children: [
-                                                      Image.asset('assets/images/img_17.png',width: 15.w,height: 15.h,),
-                                                      Column(
-                                                        children: [
-                                                           Row(
-                                                            children: [
-                                                              Text("Lunch"),
-                                                              Spacer(),
-                                                              Icon(Icons.access_time_sharp),
-                                                              Text("02:15 pm")
-                                                            ],
-                                                          ),
-                                                          const Text("Rice with vegetables and orange juice",style: TextStyle(color: Colors.grey),),
-                                                          Row(
-                                                            children: [
-                                                              Image.asset('assets/images/img_18.png'),
-                                                              Image.asset('assets/images/img_19.png')
-                                                            ],
-                                                          )
-                                                        ],
-                                                      )
-
-                                                    ],
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
+                                  ),),
+                              ],
+                            ),
+                            Center(
+                              child:Column(
+                                children: [
+                                  Container(
+                                    height: 75.h,
+                                    width: double.infinity,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                      boxShadow:  [
+                                        BoxShadow(
+                                          color: Colors.grey.withOpacity(.1),
+                                          blurRadius: 5.0, // soften the shadow
+                                          spreadRadius: 1, //extend the shadow
+                                          offset: const Offset(
+                                            2.0, // Move to right 5  horizontally
+                                            0.0, // Move to bottom 5 Vertically
+                                          ),
                                         )
                                       ],
                                     ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Image.asset('assets/images/breakfast.png',height: 10.h,width: 10.w,),
+                                              Expanded(
+                                                flex: 1,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          Text("Breakfast",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 16,fontWeight: FontWeight.w500,
+                                                                    color: Color(0xff1E1E1E)
+                                                                )),
+                                                          ),
+                                                          SizedBox(width: 11.h,),
+                                                          Padding(
+                                                            padding: const EdgeInsets.all(2.5),
+                                                            child: Image.asset("assets/images/clock.png",width: 5.w,),
+                                                          ),
+                                                          Text("10:40 am",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xff225C8B)
+                                                                )
+                                                            ),)
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children:[
+                                                          Text("Egg and Toast with butter and jam",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xffA7A7A7)
+                                                                )),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(left: 10.0,bottom: 8),
+                                            child: Image.asset("assets/images/egg.png",width: 150.w
+                                              ,height: 18.h,),
+                                          ),
+                                          const Divider(
+                                            endIndent: 25,
+                                            indent: 25,
+                                            color: Color(0xffE5E1E5),
+                                            thickness: 1,
+                                          ),
+                                          Row(
+                                            children: [
+                                              Image.asset('assets/images/snacks.png',height: 10.h,width: 10.w,),
+                                              Expanded(
+                                                flex: 1,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          Text("Snacks",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 16,fontWeight: FontWeight.w500,
+                                                                    color: Color(0xff1E1E1E)
+                                                                )),),
+                                                          SizedBox(width: 14.h,),
+                                                          Padding(
+                                                            padding: const EdgeInsets.all(2.5),
+                                                            child: Image.asset("assets/images/clock.png",width: 5.w,),
+                                                          ),
+                                                          Text("12:10 pm",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xff225C8B)
+                                                                )
+                                                            ),)
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Text("Popcorn",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xffA7A7A7)
+                                                                )),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              )
+
+                                            ],
+                                          ),
+                                          const Divider(
+                                            endIndent: 25,
+                                            indent: 25,
+                                            color: Color(0xffE5E1E5),
+                                            thickness: 1,
+                                          ),
+                                          Row(
+                                            children: [
+                                              Image.asset('assets/images/lunch.png',height: 10.h,width: 10.w,),
+                                              Expanded(
+                                                flex: 1,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    children: [
+                                                      Row(
+                                                        children: [
+                                                          Text("Lunch",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 16,fontWeight: FontWeight.w500,
+                                                                    color: Color(0xff1E1E1E)
+                                                                )),),
+                                                          SizedBox(width: 15.h,),
+                                                          Padding(
+                                                            padding: const EdgeInsets.all(2.5),
+                                                            child: Image.asset("assets/images/clock.png",width: 5.w,),
+                                                          ),
+                                                          Text("02:15 pm",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xff225C8B)
+                                                                )
+                                                            ),)
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children:[
+                                                          Text("Rice with vegetables and orange juice",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontSize: 12,fontWeight: FontWeight.w400,
+                                                                    color: Color(0xffA7A7A7)
+                                                                )),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(left: 41.0),
+                                            child: Row(
+                                              children: [
+                                                Image.asset("assets/images/rice.png",
+                                                  width: 32.w,),
+                                                SizedBox(width: 2.5.w,),
+                                                Image.asset("assets/images/juice.png",width: 32.w,),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ));
+                          ],
+                        ),
+                      );
                     }
                 )
               ],

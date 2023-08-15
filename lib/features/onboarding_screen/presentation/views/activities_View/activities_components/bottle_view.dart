@@ -17,7 +17,7 @@ class BottleView extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset('assets/images/img_12.png',height: 10.h,width: 10.w,),
+                    Image.asset('assets/images/name.png',height: 10.h,width: 10.w,),
                     SizedBox(width: 2.w,),
                     Text('Rouse Berry',style: GoogleFonts.josefinSans(
                         textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
@@ -43,7 +43,7 @@ class BottleView extends StatelessWidget {
                             )
                           ],
                         ),
-                        child: Image.asset('assets/images/img_13.png',),
+                        child: Image.asset('assets/images/notification.png',),
                       ),
                     )
                   ],
@@ -104,119 +104,293 @@ class BottleView extends StatelessWidget {
                 ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     shrinkWrap: true,
-                    itemCount: 7,
+                    itemCount: 1,
                     itemBuilder: (BuildContext context, int index) {
-                      return GestureDetector(
-                          onTap: () {
-                            // Navigator.pushNamed(context, details[index]['navegate']);
-                            // Navigator.push(context, MaterialPageRoute(builder: (context)=>details[index]['navegate']));
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Text("Morning",
-                                      style: GoogleFonts.poppins(
-                                          textStyle: const TextStyle(
-                                              fontSize: 14,fontWeight: FontWeight.w500
-                                          )
-                                      ),),
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            Container(
+                                padding: const EdgeInsets.only(left: 5),
+                                height: 10.h,
+                                width: 150.w,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow:  [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(.3),
+                                      blurRadius: 5.0, // soften the shadow
+                                      spreadRadius: 1, //extend the shadow
+                                      offset: const Offset(
+                                        2.0, // Move to right 5  horizontally
+                                        2.0, // Move to bottom 5 Vertically
+                                      ),
+                                    )
                                   ],
+                                  borderRadius: BorderRadius.circular(8.sp),
                                 ),
-                                Container(
-                                  height: 10.h,
-                                  width: 150.w,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow:  [
-                                      BoxShadow(
-                                        color: Colors.grey.withOpacity(.3),
-                                        blurRadius: 5.0, // soften the shadow
-                                        spreadRadius: 1, //extend the shadow
-                                        offset: const Offset(
-                                          2.0, // Move to right 5  horizontally
-                                          2.0, // Move to bottom 5 Vertically
-                                        ),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(8.sp),
-                                  ),
-                                  child: Center(
-                                    child:Column(
+                                child: Column(
+                                  children: [
+                                    Row(
                                       children: [
-                                        Column(
-                                          children: [
-                                            Container(
-                                              margin: const EdgeInsets.only(bottom: 10),
-                                              height: 40.h,
-                                              width: 60.w,
-                                              decoration: BoxDecoration(
-                                                color: Colors.red,
-                                                boxShadow:  [
-                                                  BoxShadow(
-                                                    color: Colors.grey.withOpacity(.3),
-                                                    blurRadius: 5.0, // soften the shadow
-                                                    spreadRadius: 1, //extend the shadow
-                                                    offset: const Offset(
-                                                      2.0, // Move to right 5  horizontally
-                                                      0.0, // Move to bottom 5 Vertically
-                                                    ),
-                                                  )
-                                                ],
-                                              ),
-                                              child: Column(
-                                                children: [
-                                                  Row(
-                                                    children: [
-                                                      Image.asset('lib/bottle.dart'),
-                                                      Column(
+                                        Image.asset('assets/images/bottle.png',height: 10.h,width: 10.w,),
+                                        Expanded(
+                                          flex: 1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(5.0),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("2.5 ml",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 16,fontWeight: FontWeight.w500,
+                                                              color: Color(0xff1E1E1E)
+                                                          )),),
+                                                    const Spacer(),
+                                                    Container(
+                                                      padding: const EdgeInsets.all(4),
+                                                      height: 3.h,
+                                                      width: 23.w,
+                                                      decoration:   BoxDecoration(
+                                                          color: const Color(0xff32A048),
+                                                          borderRadius: BorderRadius.circular(4)
+                                                      ),
+                                                      child: Row(
                                                         children: [
-                                                          Row(
-                                                            children: [
-                                                              const Text("2.5 ml"),
-
-                                                              Container(
-                                                                width: 20.w,
-                                                                height: 5.h,
-                                                                decoration: const BoxDecoration(
-                                                                    color: Color(0xff32A048)
-                                                                ),
-                                                                child: Row(
-                                                                  children: [
-                                                                    Image.asset("assets/images/img_1.png"),
-                                                                    Text("Finished",
-                                                                        style:GoogleFonts.poppins(
-                                                                          textStyle: const TextStyle(
-                                                                              fontSize: 12,fontWeight: FontWeight.w400,
-                                                                              color: Colors.white
-                                                                          ),))
-                                                                  ],
-                                                                ),
-                                                              ),
-
-                                                              const Spacer()
-                                                            ],
-                                                          ),
-                                                          const Text("Egg and Toast with butter and jam",style: TextStyle(color: Colors.grey),),
+                                                          Image.asset("assets/images/done.png",width: 4.w,),
+                                                          SizedBox(width: 2.w,),
+                                                          Text("Finished",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontWeight: FontWeight.w400,fontSize: 12,
+                                                                    color: Color(0xffFFFFFF)
+                                                                )
+                                                            ),)
                                                         ],
-                                                      )
 
-                                                    ],
-                                                  ),
-                                                ],
-                                              ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(2.5),
+                                                      child: Image.asset("assets/images/greyclock.png",width: 5.w,),
+                                                    ),
+                                                    Text("10:00 am",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 12,fontWeight: FontWeight.w400,
+                                                              color: Color(0xffA7A7A7)
+                                                          )
+                                                      ),)
+                                                  ],
+                                                ),
+                                              ],
                                             ),
-                                          ],
+                                          ),
                                         )
+
                                       ],
                                     ),
-                                  ),
-                                ),
-                              ],
+                                  ],
+                                )
                             ),
-                          ));
+                            SizedBox(height: 2.h,),
+                            Container(
+                                padding: const EdgeInsets.only(left: 5),
+                                height: 10.h,
+                                width: 150.w,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow:  [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(.3),
+                                      blurRadius: 5.0, // soften the shadow
+                                      spreadRadius: 1, //extend the shadow
+                                      offset: const Offset(
+                                        2.0, // Move to right 5  horizontally
+                                        2.0, // Move to bottom 5 Vertically
+                                      ),
+                                    )
+                                  ],
+                                  borderRadius: BorderRadius.circular(8.sp),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Image.asset('assets/images/bottle.png',height: 10.h,width: 10.w,),
+                                        Expanded(
+                                          flex: 1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(5.0),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("1.5 ml",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 16,fontWeight: FontWeight.w500,
+                                                              color: Color(0xff1E1E1E)
+                                                          )),),
+                                                    const Spacer(),
+                                                    Container(
+                                                      padding: const EdgeInsets.all(4),
+                                                      height: 3.h,
+                                                      width: 23.w,
+                                                      decoration:   BoxDecoration(
+                                                          color: const Color(0xff32A048),
+                                                          borderRadius: BorderRadius.circular(4)
+                                                      ),
+                                                      child: Row(
+                                                        children: [
+                                                          Image.asset("assets/images/done.png",width: 4.w,),
+                                                          SizedBox(width: 2.w,),
+                                                          Text("Finished",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontWeight: FontWeight.w400,fontSize: 12,
+                                                                    color: Color(0xffFFFFFF)
+                                                                )
+                                                            ),)
+                                                        ],
+
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(2.5),
+                                                      child: Image.asset("assets/images/greyclock.png",width: 5.w,),
+                                                    ),
+                                                    Text("12:30 am",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 12,fontWeight: FontWeight.w400,
+                                                              color: Color(0xffA7A7A7)
+                                                          )
+                                                      ),)
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )
+
+                                      ],
+                                    ),
+                                  ],
+                                )
+                            ),
+                            SizedBox(height: 2.h,),
+                            Container(
+                                padding: const EdgeInsets.only(left: 5),
+                                height: 10.h,
+                                width: 150.w,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow:  [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(.3),
+                                      blurRadius: 5.0, // soften the shadow
+                                      spreadRadius: 1, //extend the shadow
+                                      offset: const Offset(
+                                        2.0, // Move to right 5  horizontally
+                                        2.0, // Move to bottom 5 Vertically
+                                      ),
+                                    )
+                                  ],
+                                  borderRadius: BorderRadius.circular(8.sp),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Image.asset('assets/images/bottle.png',height: 10.h,width: 10.w,),
+                                        Expanded(
+                                          flex: 1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(5.0),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("1.5 ml",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 16,fontWeight: FontWeight.w500,
+                                                              color: Color(0xff1E1E1E)
+                                                          )),),
+                                                    const Spacer(),
+                                                    Container(
+                                                      padding: const EdgeInsets.all(4),
+                                                      height: 3.h,
+                                                      width: 32.w,
+                                                      decoration:   BoxDecoration(
+                                                          color: const Color(0xffD32323),
+                                                          borderRadius: BorderRadius.circular(4)
+                                                      ),
+                                                      child: Row(
+                                                        children: [
+                                                          Image.asset("assets/images/false.png",width: 4.w,),
+                                                          SizedBox(width: 2.w,),
+                                                          Text("Unfinished",
+                                                            style: GoogleFonts.poppins(
+                                                                textStyle: const TextStyle(
+                                                                    fontWeight: FontWeight.w400,fontSize: 12,
+                                                                    color: Color(0xffFFFFFF)
+                                                                )
+                                                            ),)
+                                                        ],
+
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(2.5),
+                                                      child: Image.asset("assets/images/greyclock.png",width: 5.w,),
+                                                    ),
+                                                    Text("02:00 pm",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 12,fontWeight: FontWeight.w400,
+                                                              color: Color(0xffA7A7A7)
+                                                          )
+                                                      ),),
+                                                    const Spacer(),
+                                                    Text("Remaining: ",
+                                                      style: GoogleFonts.poppins(
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 12,fontWeight: FontWeight.w400,
+                                                              color: Color(0xffA7A7A7)
+                                                          )
+                                                      ),),
+                                                    const Text("0.5 ml",style: TextStyle(color: Colors.black),)
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )
+
+                                      ],
+                                    ),
+                                  ],
+                                )
+                            ),
+                          ],
+                        ),
+                      );
                     }
                 )
               ],
@@ -227,3 +401,4 @@ class BottleView extends StatelessWidget {
     );
   }
 }
+
