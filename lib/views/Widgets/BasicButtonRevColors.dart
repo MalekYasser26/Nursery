@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../constants/constants.dart';
 
-class BasicButtonRevColor extends StatelessWidget {
-  final WidgetBuilder builder;
+class BasicButton extends StatelessWidget {
+  final WidgetBuilder route;
   final  Color color  ;
   final  Color Textcolor  ;
   final  String TextSt  ;
   final  Color borderColor  ;
-  BasicButtonRevColor({Key? key, required this.builder,required this.color,required this.Textcolor,required this.TextSt,required this.borderColor}) : super(key: key);
+  BasicButton({Key? key, required this.route,required this.color,required this.Textcolor,required this.TextSt,required this.borderColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => Navigator.push(context, MaterialPageRoute(builder: builder)),
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: route)),
       child: Container(
         height: 5.h,
         width: double.infinity,
