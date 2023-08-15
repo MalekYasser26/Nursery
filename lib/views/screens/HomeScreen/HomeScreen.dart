@@ -16,9 +16,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Padding(
             padding:  EdgeInsets.symmetric(horizontal: 4.w),
@@ -52,11 +52,11 @@ class HomeScreen extends StatelessWidget {
                               boxShadow:  [
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(.3),
-                                  blurRadius: 5.0, // soften the shadow
-                                  spreadRadius: 1, //extend the shadow
+                                  blurRadius: 5.0,
+                                  spreadRadius: 1,
                                   offset: const Offset(
-                                    2.0, // Move to right 5  horizontally
-                                    2.0, // Move to bottom 5 Vertically
+                                    2.0,
+                                    2.0,
                                   ),
                                 )
                               ],
@@ -127,10 +127,10 @@ class HomeScreen extends StatelessWidget {
                          ),
                        ),
                        SizedBox(height: 2.h,),
-                       BasicButtonRevColor(builder: (context) =>QRScreen() ,
+                       BasicButton(route: (context) =>QRScreen() ,
                            color: AppColors.blueCol,Textcolor: Colors.white , TextSt: "View daily report",borderColor: Colors.transparent),
                        SizedBox(height: 1.h,),
-                       BasicButtonRevColor(builder: (context) =>QRScreen() ,
+                       BasicButton(route: (context) =>QRScreen() ,
                            color: Colors.orangeAccent,Textcolor: Colors.white , TextSt: "Access live camera",borderColor: Colors.transparent),
                        SizedBox(height: 2.h,),
                        GridView.builder(
@@ -188,11 +188,11 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-
-
-
-
       ),
+
+
+
+
     );
 
   }
