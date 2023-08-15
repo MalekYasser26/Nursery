@@ -4,8 +4,11 @@ import 'package:nursery/constants/constants.dart';
 import 'package:nursery/core/utils/assets.dart';
 import 'package:nursery/views/screens/BottomNavBarScreen.dart';
 import 'package:nursery/views/screens/HomeScreen/HomeScreen.dart';
-import 'package:nursery/views/screens/HomeScreen/TakeBringScreens/TakeScreen.dart';
+import 'package:nursery/views/screens/HomeScreen/RequestsScreens/EarlyLeaveScreen/CalendarCustom.dart';
+import 'package:nursery/views/screens/HomeScreen/RequestsScreens/EarlyLeaveScreen/EarlyLeaveScreen.dart';
 import 'package:sizer/sizer.dart';
+
+import '../screens/HomeScreen/RequestsScreens/TakeBringScreens/TakeScreen.dart';
 
 class RequestWidgets extends StatelessWidget {
    RequestWidgets({Key? key,required this.index}) : super(key: key);
@@ -16,7 +19,7 @@ class RequestWidgets extends StatelessWidget {
     return InkWell(
       onTap:() {
         if (index==0){
-           Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));
+           Navigator.push(context, MaterialPageRoute(builder: (context) =>EarlyLeaveScreen() ,));
         
         } else if (index==1){
           Navigator.push(context, MaterialPageRoute(builder: (context) =>BottomNavBarScreen() ,));

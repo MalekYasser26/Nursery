@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nursery/views/Widgets/BasicButton.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
+import 'package:nursery/views/screens/BottomNavBarScreen.dart';
 import 'package:nursery/views/screens/HomeScreen/HomeScreen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -55,9 +55,10 @@ class QRScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 6.w, right: 6.w, bottom: 4.h),
             child: Column(
               children: [
-                BasicButton(builder: (context) => HomeScreen(),text: "Download QR Code"),
+                BasicButton(route: (context) => BottomNavBarScreen(),
+                  color: AppColors.blueCol,Textcolor: Colors.white,TextSt: "Download QR Code",borderColor: Colors.transparent,),
                 SizedBox(height: 2.h,),
-                BasicButtonRevColor(builder: (context) => HomeScreen(),
+                BasicButton(route: (context) => BottomNavBarScreen(),
                   color: Colors.transparent,Textcolor: AppColors.blueCol,TextSt: "Return to home",borderColor: AppColors.blueCol,)
               ],
             ),

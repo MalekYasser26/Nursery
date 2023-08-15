@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
-import 'package:nursery/views/Widgets/BasicTextFF.dart';
 import 'package:nursery/views/Widgets/ConfirmButton.dart';
 import 'package:nursery/views/Widgets/ExtendedWidget.dart';
-import 'package:nursery/views/Widgets/UploadPhotoWidget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Widgets/ExtendedWidgetElse.dart';
+import '../../../../Widgets/ExtendedWidgetElse.dart';
+
 
 class TakeBringChildScreen extends StatefulWidget {
    TakeBringChildScreen({Key? key,required this.TakeOrBring}) : super(key: key);
@@ -18,8 +17,6 @@ class TakeBringChildScreen extends StatefulWidget {
 }
 
 class _TakeBringChildScreenState extends State<TakeBringChildScreen> {
-  String? gender; //no radio button will be selected
-  bool  checked = false;
   int selectedOption = 1;
 
   @override
@@ -155,7 +152,7 @@ class _TakeBringChildScreenState extends State<TakeBringChildScreen> {
                           if(selectedOption==2)
                             ExtendedWidget(),
                           if(selectedOption == 3)
-                          ExtendedWidgetElse()
+                          ExtendedWidgetElse(),
 
                         ],
                       ),
