@@ -128,12 +128,12 @@ class _LoginScreenState extends State<LoginScreen> {
             Positioned(
               bottom: 0,
               left: 30.w,
-              child: Image.asset('assets/images/Login/orangeCircle.png',color: AppColors.redCol,width: 45.w),
+              child: Image.asset('assets/images/Login/orangeCircle.png',width: 45.w),
             ),   // Circle animation
             Positioned(
               right: 0,
               bottom: 0,
-              child: Image.asset('assets/images/Login/purpleCircle.png',color: AppColors.purbleCol,),width:50.w,),
+              child: Image.asset('assets/images/Login/purpleCircle.png',),width:50.w,),
         ]),
       ),
     );

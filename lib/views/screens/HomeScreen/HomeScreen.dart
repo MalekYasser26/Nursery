@@ -6,6 +6,7 @@ import 'package:nursery/views/Widgets/AnnouncementWidget.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
 import 'package:nursery/views/Widgets/GalleryWidget.dart';
 import 'package:nursery/views/Widgets/RequestWidgets.dart';
+import 'package:nursery/views/screens/DailyReportScreen/dailyreport.dart';
 import 'package:nursery/views/screens/QRScreen/QRScreen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -38,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                         Image.asset('assets/images/name.png',height: 10.h,width: 10.w,),
                         SizedBox(width: 2.w,),
                         Text('Rouse Berry',style: GoogleFonts.josefinSans(
-                            textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
+                            textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 14.sp),),
                         const Spacer(),
                         InkWell(
                           onTap: (){
@@ -66,12 +67,17 @@ class HomeScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                    Row(
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Please select your child",
                           style: GoogleFonts.poppins(
-                              textStyle: const TextStyle(fontWeight: FontWeight.w600,fontSize: 16)
+                              textStyle:  TextStyle(fontWeight: FontWeight.w600,fontSize: 12.sp)
                           ),),
+                        Text("15 Feb 2023",
+                          style: GoogleFonts.poppins(
+                              textStyle:  TextStyle(fontWeight: FontWeight.w400,fontSize: 11.sp,color: Colors.grey)
+                          ),),
+
                       ],
                     ),
                     Row(
@@ -127,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                          ),
                        ),
                        SizedBox(height: 2.h,),
-                       BasicButton(route: (context) =>QRScreen() ,
+                       BasicButton(route: (context) =>DailyReportScreen() ,
                            color: AppColors.blueCol,Textcolor: Colors.white , TextSt: "View daily report",borderColor: Colors.transparent),
                        SizedBox(height: 1.h,),
                        BasicButton(route: (context) =>QRScreen() ,

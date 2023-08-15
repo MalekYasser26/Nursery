@@ -156,7 +156,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
               child: SlideTransition(
                 position:CircAnimatedController.dtpAnimation ,
 
-                child: Image.asset('assets/images/OrangeCircle.png',color: AppColors.redCol,width: 45.w),
+                child: Image.asset('assets/images/OrangeCircle.png',width: 45.w),
               ),
             ),   // Circle animation
             Positioned(
