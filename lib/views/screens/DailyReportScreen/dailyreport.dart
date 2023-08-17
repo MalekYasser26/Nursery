@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
 import 'package:nursery/core/utils/assets.dart';
+import 'package:nursery/views/Widgets/ActivityItem.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
 import 'package:nursery/views/screens/BottomNavBarScreen.dart';
 import 'package:nursery/views/screens/DailyReportScreen/DailyReportItem.dart';
@@ -74,10 +75,10 @@ class DailyReportScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 60.h,
+                  height: 55.h,
                   width: double.infinity,
                   child: ListView.separated(
-                      itemBuilder: (context, index) => DailyReportItem(action:ReportTXT[index] ,time:ReportTime[index] ,
+                      itemBuilder: (context, index) =>ActItem(action:ReportTXT[index] ,time:ReportTime[index] ,
                         color:ReportColors[index] ,img:ReportIcons[index] ,),
                       separatorBuilder:(context, index) =>  SizedBox(height: 1.h,),
                       itemCount: ReportTXT.length),
@@ -85,7 +86,6 @@ class DailyReportScreen extends StatelessWidget {
                 Padding(
                   padding:  EdgeInsets.symmetric(horizontal: 12.0.w),
                   child: Container(
-                    margin: EdgeInsets.all(2),
                     decoration: BoxDecoration(
                         border: Border.all(color :Colors.grey.shade400),
                     ),
@@ -99,11 +99,10 @@ class DailyReportScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                DailyReportItem(img: AssetsData.reportImg3, color: Colors.orangeAccent, time: "3:30 pm", action: "Malak had all of her pasta"),
+                ActItem(img: AssetsData.reportImg3, color: Colors.orangeAccent, time: "3:30 pm:", action: " Malak had all of her pasta"),
                 Padding(
                   padding:  EdgeInsets.symmetric(horizontal: 12.0.w),
                   child: Container(
-                    margin: EdgeInsets.all(2),
                     child: Padding(
                       padding:  EdgeInsets.all(1.w),
                       child:Image.asset("assets/images/pasta.png")

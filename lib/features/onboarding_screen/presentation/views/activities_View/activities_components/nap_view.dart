@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/core/utils/assets.dart';
+import 'package:nursery/views/Widgets/ActivityItem.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../../constants/constants.dart';
@@ -85,7 +86,6 @@ class _NapViewState extends State<NapView> {
                 ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton(
-                    icon: Icon(Icons.keyboard_arrow_down),
                     isExpanded: true,
                     alignment: Alignment.center,
                     value: dropdownValue2,
@@ -114,11 +114,13 @@ class _NapViewState extends State<NapView> {
                 width: double.infinity,
                 child: ListView.separated(
                   physics: NeverScrollableScrollPhysics(),
-                    itemBuilder: (context, index) => DailyReportItem(action:napTXT[index] ,time:napTime[index] ,
-                      color:AppColors.blueCol ,img:AssetsData.reportImg2 ,),
+                    itemBuilder: (context, index) => ActItem(action:napTXT[index] ,time:napTime[index] ,
+                      color:AppColors.blueCol ,img:AssetsData.reportImg2 , ),
                     separatorBuilder:(context, index) =>  SizedBox(height: 1.h,),
                     itemCount: napTXT.length),
               ),
+
+
 
 
 
