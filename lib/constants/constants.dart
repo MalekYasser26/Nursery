@@ -124,6 +124,4 @@ class SvgIcon extends StatelessWidget {
   }
 }
 const KPrimaryColor = Color(0xff225C8B);
-class MyCustomIcons {
-  static const IconData myIcon = IconData(0xe318, fontFamily: 'MyCustomFont');
-}
+

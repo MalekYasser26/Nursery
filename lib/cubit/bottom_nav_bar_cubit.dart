@@ -2,10 +2,9 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:meta/meta.dart';
-import 'package:nursery/constants/constants.dart';
+import 'package:nursery/cust_icon_icons.dart';
 import 'package:nursery/views/screens/CalendarScreen.dart';
 import 'package:nursery/views/screens/SettingsScreen.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../features/onboarding_screen/presentation/views/activities_View/activities-view.dart';
 import '../views/screens/HomeScreen/HomeScreen.dart';
 
@@ -18,28 +17,30 @@ class BottomNavBarCubit extends Cubit<BottomNavBarState> {
     bottomNavIndex = index;
   }
   List<Widget>Screens = [
-    HomeScreen(),
+    const HomeScreen(),
     ActivitiesView(),
-    CalendarScreen(),
-    SettingsScreen()
+    const CalendarScreen(),
+    const SettingsScreen()
   ];
 
   List<GButton>BotNavIcons=[
-   GButton(icon: Icons.home,
+   const GButton(icon: CustIcon.a,
           text: "Home",
 
    ) ,
-   GButton(icon:Icons.piano,
+   const GButton(icon: CustIcon.svgviewer_output,
      text: "Activites",
    ),
-   GButton(icon: Icons.calendar_today,
+   const GButton(icon: CustIcon.b,
      text: "Calendar",
 
    ),
-   GButton(icon: Icons.settings,
+   const GButton(icon: CustIcon.c,
      text: "Settings",
 
-   )];
+   ),
+
+  ];
   List<IconData>BotNavIconss=[
     Icons.home,
     Icons.favorite,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/views/Widgets/MoodItem.dart';
-import 'package:nursery/views/screens/DailyReportScreen/DailyReportItem.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../../constants/constants.dart';

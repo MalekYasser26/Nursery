@@ -5,7 +5,6 @@ import 'package:nursery/core/utils/assets.dart';
 import 'package:nursery/views/Widgets/ActivityItem.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
 import 'package:nursery/views/screens/BottomNavBarScreen.dart';
-import 'package:nursery/views/screens/DailyReportScreen/DailyReportItem.dart';
 import 'package:sizer/sizer.dart';
 
 class DailyReportScreen extends StatelessWidget {

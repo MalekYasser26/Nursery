@@ -5,7 +5,6 @@ import 'package:nursery/views/Widgets/ActivityItem.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../../constants/constants.dart';
-import '../../../../../../views/screens/DailyReportScreen/DailyReportItem.dart';
 
 class NapView extends StatefulWidget {
   const NapView({Key? key}) : super(key: key);
