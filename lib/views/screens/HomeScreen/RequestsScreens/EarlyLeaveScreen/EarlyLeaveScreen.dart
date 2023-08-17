@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
 import 'package:nursery/views/Widgets/BasicButtonRevColors.dart';
-import 'package:nursery/views/Widgets/ExtendedWidget.dart';
-import 'package:nursery/views/Widgets/ExtendedWidgetElse.dart';
 import 'package:nursery/views/Widgets/LeaveForm.dart';
 import 'package:nursery/views/screens/ConfirmScreen.dart';
 import 'package:nursery/views/screens/HomeScreen/RequestsScreens/EarlyLeaveScreen/CalendarCustom.dart';
@@ -21,15 +19,15 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
   String dropdownValue = EarlyLeaveButton.first;
   String dropdownValue2 = LeaveTime.first;
   int selectedOption = 2;
-
+  bool pressed = false ;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Padding(
           padding:  EdgeInsets.symmetric(horizontal: 4.0.w,vertical: 1.6.h),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+
             children: [
               Row(
                 children: [
@@ -37,7 +35,9 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                   SizedBox(width: 2.w,),
                   Text('Rouse Berry',style: GoogleFonts.josefinSans(
                       textStyle:const TextStyle(color: Color(0xff225C8B)),fontWeight: FontWeight.w500,fontSize: 18),),
-                  const Spacer(),
+                  const Expanded(
+                      flex: 2,
+                      child: SizedBox()),
                   InkWell(
                     onTap: (){
                     },
@@ -78,7 +78,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
               ),
               SizedBox(height :3.h),
               Text('Select the date',style: GoogleFonts.poppins(fontWeight: FontWeight.w500,fontSize: 14.sp),),
-              DatePickerCustom(),
+              const DatePickerCustom(),
               SizedBox(height :3.h),
 
               Text('Select Time',style: GoogleFonts.poppins(fontWeight: FontWeight.w500,fontSize: 14.sp),),
@@ -92,6 +92,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                     ),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton(
+                        icon: Icon(Icons.keyboard_arrow_down),
                         isExpanded: true,
                         alignment: Alignment.center,
                         value: dropdownValue,
@@ -117,6 +118,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                     ),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton(
+                        icon: Icon(Icons.keyboard_arrow_down),
 
                         isExpanded: true,
                         alignment: Alignment.center,
@@ -139,7 +141,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
               ),
               Padding(
                 padding:  EdgeInsets.symmetric(vertical: 1.h),
-                child: Divider(
+                child: const Divider(
                   thickness: 1.5,
                 ),
               ),
@@ -152,7 +154,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                       children: [
                         Radio<int>(
                           activeColor: AppColors.blueCol,
-                          visualDensity: VisualDensity(horizontal: -4),
+                          visualDensity: const VisualDensity(horizontal: -4),
                           value: 1,
                           groupValue: selectedOption,
                           onChanged: (value) {
@@ -178,7 +180,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                       children: [
                         Radio<int>(
                           activeColor: AppColors.blueCol,
-                          visualDensity: VisualDensity(horizontal: -4, vertical: -4),
+                          visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
                           value: 2,
                           groupValue: selectedOption,
                           onChanged: (value) {
@@ -199,14 +201,16 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                   ),
                 ],
               ),
-              LeaveFormWidget(),
-              Spacer(),
+              const LeaveFormWidget(),
+               SizedBox(
+                height: 3.h,
+              ),
               BasicButton(
                   route: (context) => ConfirmScreen(msgButton: "Request Confirmed", submsgButton: "Request has been sent successfully"),
                   color: AppColors.blueCol,
                   Textcolor: Colors.white,
                   TextSt: "Send request",
-                  borderColor: Colors.transparent)
+                  borderColor: Colors.transparent),
 
 
 

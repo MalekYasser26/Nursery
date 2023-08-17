@@ -146,7 +146,7 @@ class HomeScreen extends StatelessWidget {
                          shrinkWrap: true,
                          itemBuilder: (context, index) {
                            return Padding(
-                             padding: const EdgeInsets.all(8.0),
+                             padding:  EdgeInsets.all(1.h),
                              child: RequestWidgets(index: index),
                            );
                          },

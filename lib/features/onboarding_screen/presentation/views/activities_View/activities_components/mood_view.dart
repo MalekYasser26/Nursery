@@ -7,9 +7,17 @@ import 'package:sizer/sizer.dart';
 import '../../../../../../constants/constants.dart';
 import '../../../../../../core/utils/assets.dart';
 
-class MoodView extends StatelessWidget {
+class MoodView extends StatefulWidget {
   const MoodView({Key? key}) : super(key: key);
   static const String routeName="MoodView";
+
+  @override
+  State<MoodView> createState() => _MoodViewState();
+}
+
+class _MoodViewState extends State<MoodView> {
+  String dropdownValue3 = moodDate.first;
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -68,6 +76,38 @@ class MoodView extends StatelessWidget {
                     ),),
 
                 ],
+              ),
+              SizedBox(height: 1.h,),
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.grey.shade300)
+                ),
+                child: DropdownButtonHideUnderline(
+                  child: DropdownButton(
+                    icon: Icon(Icons.keyboard_arrow_down),
+                    isExpanded: true,
+                    alignment: Alignment.center,
+                    value: dropdownValue3,
+                    items: moodDate.map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Row(
+                          children: [
+                            SizedBox(width : 1.w),
+                            Icon(Icons.calendar_month,color: Colors.grey),
+                            SizedBox(width: 2.w,),
+                            Text(value,style: GoogleFonts.poppins(),),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                    onChanged: (value) {
+                      setState(() {
+                        dropdownValue3 = value!;
+                      });
+                    }, ),
+                ),
               ),
               MoodItem(action:" Malak was happy" ,time:"09:00 am - 12:30 pm:" ,
                     color:AppColors.lightgreenCol ,img:AssetsData.happy ,),

@@ -63,7 +63,8 @@ class _ExtendedWidgetState extends State<ExtendedWidget> {
                 ],
               ),
             ),
-            BasicTextFF(fftext: "Time he will take him",suffix: Icons.arrow_drop_down),
+            BasicTextFF(fftext: "Time he will take him",suffix:(Icons.keyboard_arrow_down),
+      ),
             Divider(thickness: 2),
             Row(
               children: [

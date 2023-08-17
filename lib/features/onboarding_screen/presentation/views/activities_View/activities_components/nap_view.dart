@@ -85,6 +85,7 @@ class _NapViewState extends State<NapView> {
                 ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton(
+                    icon: Icon(Icons.keyboard_arrow_down),
                     isExpanded: true,
                     alignment: Alignment.center,
                     value: dropdownValue2,

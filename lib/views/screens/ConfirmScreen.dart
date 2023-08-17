@@ -16,7 +16,6 @@ class ConfirmScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../core/utils/assets.dart';
 
@@ -81,7 +83,8 @@ List<String> napDate = [
   "13 Feb 2023",
   "14 Feb 2023",
   "15 Feb 2023",
-];List<String> napTXT = [
+];
+List<String> napTXT = [
   " Malak had a nap from 11:00 am to 11:30 am",
   " Malak had a nap from 02:00 pm to 03:30 am",
   " Malak had a nap from 04:00 pm to 04:15 pm",
@@ -92,4 +95,35 @@ List<String> napTime = [
 "2:00 pm:",
 "4:00 pm:",
 ];
+List<String> moodDate = [
+  "11 Feb 2023",
+  "12 Feb 2023",
+  "13 Feb 2023",
+  "14 Feb 2023",
+  "15 Feb 2023",
+];
+class SvgIcon extends StatelessWidget {
+  final String svgString;
+  final double size;
+  final Color color;
+
+  const SvgIcon({
+    required this.svgString,
+    this.size = 24,
+    this.color = Colors.black,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SvgPicture.string(
+      svgString,
+      width: size,
+      height: size,
+      color: color,
+    );
+  }
+}
 const KPrimaryColor = Color(0xff225C8B);
+class MyCustomIcons {
+  static const IconData myIcon = IconData(0xe318, fontFamily: 'MyCustomFont');
+}

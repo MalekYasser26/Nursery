@@ -44,6 +44,7 @@ class MyApp extends StatelessWidget {
                 DiaperView.routeName :(ctx)=>const DiaperView(),
                 QuizView.routeName :(ctx)=>const QuizView(),
               },
+
             ),
           );
         }
