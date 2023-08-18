@@ -9,7 +9,8 @@ class BasicButton extends StatelessWidget {
   final  Color Textcolor  ;
   final  String TextSt  ;
   final  Color borderColor  ;
-  BasicButton({Key? key, required this.route,required this.color,required this.Textcolor,required this.TextSt,required this.borderColor}) : super(key: key);
+  final double textSize ;
+  BasicButton({Key? key, required this.route,required this.color,required this.Textcolor,required this.TextSt,required this.borderColor,this.textSize=14}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class BasicButton extends StatelessWidget {
         child: Center(
           child: Text(
             TextSt,
-            style: GoogleFonts.poppins(color: Textcolor),
+            style: GoogleFonts.poppins(color: Textcolor,fontSize: textSize ),
           ),
         ),
       ),
