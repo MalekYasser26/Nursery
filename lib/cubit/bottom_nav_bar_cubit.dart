@@ -24,18 +24,18 @@ class BottomNavBarCubit extends Cubit<BottomNavBarState> {
   ];
 
   List<GButton>BotNavIcons=[
-   const GButton(icon: CustIcon.a,
+   const GButton(icon: CustIcon.home,
           text: "Home",
 
    ) ,
-   const GButton(icon: CustIcon.svgviewer_output,
+   const GButton(icon: CustIcon.activites,
      text: "Activites",
    ),
-   const GButton(icon: CustIcon.b,
+   const GButton(icon: CustIcon.calendar,
      text: "Calendar",
 
    ),
-   const GButton(icon: CustIcon.c,
+   const GButton(icon: CustIcon.settings,
      text: "Settings",
 
    ),

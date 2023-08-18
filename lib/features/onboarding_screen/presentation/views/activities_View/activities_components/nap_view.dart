@@ -64,7 +64,7 @@ class _NapViewState extends State<NapView> {
                 children: [
                   InkWell(
                       onTap: () => Navigator.pop(context),
-                      child: Icon(Icons.arrow_back_ios,color: Colors.black45,size: 15.sp)),
+                      child: Icon(Icons.arrow_back_ios,color: AppColors.blueCol,size: 15.sp)),
                   Text(" Nap",
                     style: GoogleFonts.poppins(
                         textStyle:  TextStyle(fontWeight: FontWeight.w600,fontSize: 14.sp)

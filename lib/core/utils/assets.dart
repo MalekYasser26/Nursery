@@ -33,5 +33,10 @@ class AssetsData{
   static const reportImg3='assets/images/DailyReport/img_2.png';
   static const reportImg4='assets/images/DailyReport/img_3.png';
   static const reportImg5='assets/images/DailyReport/img_4.png';
+  static const math='assets/images/mathematics.png';
+  static const science='assets/images/science.png';
+  static const english='assets/images/english.png';
+  static const painting='assets/images/painting.png';
+  static const drawing='assets/images/drawing.png';
 
 }

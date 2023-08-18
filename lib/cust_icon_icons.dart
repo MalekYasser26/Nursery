@@ -21,8 +21,8 @@ class CustIcon {
   static const _kFontFam = 'CustIcon';
   static const String? _kFontPkg = null;
 
-  static const IconData svgviewer_output = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData a = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData b= IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData c = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData activites = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData home = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData calendar= IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData settings = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }

@@ -34,7 +34,6 @@ class RequestWidgets extends StatelessWidget {
         }
       }, 
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 2),
         decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(100)),

@@ -12,6 +12,10 @@ class AppColors {
   static const Color orangeCol = Color(0xFFFEA95C);
   static const Color pinkCol = Color(0xFFD86BA7);
   static const Color redCol = Color(0xFFD32323);
+  static const Color greenCol = Color(0xFF32A048);
+  static const Color darkOrangeCol = Color(0xFF07A0D);
+  static const Color yellowCol = Color(0xFFEBC919);
+  static const Color darkRedCol = Color(0xFFD32323);
 }
 List<String> HomeScreenImg = [
   AssetsData.leave,
@@ -102,26 +106,42 @@ List<String> moodDate = [
   "14 Feb 2023",
   "15 Feb 2023",
 ];
-class SvgIcon extends StatelessWidget {
-  final String svgString;
-  final double size;
-  final Color color;
+List<String> quizDates = [
+  '04 Feb 2023 - 16 Feb 2023',
+  '17 Feb 2023 - 28 Feb 2023',
+  '01 Mar 2023 - 12 Mar 2023',
+  '13 Mar 2023 - 24 Mar 2023',
+];
 
-  const SvgIcon({
-    required this.svgString,
-    this.size = 24,
-    this.color = Colors.black,
-  });
+List<String> quizzesImgs = [
+  AssetsData.math,
+  AssetsData.science,
+  AssetsData.english,
+  AssetsData.painting,
+  AssetsData.drawing,
+];
+List<String> quizzesTXT = [
+  "Mathematics",
+  "Science",
+  "English",
+  "Painting",
+  "Drawing",
+];
+List<String> quizzesDate = [
+  "04 Feb 2023",
+  "06 Feb 2023",
+  "08 Feb 2023",
+  "12 Feb 2023",
+  "16 Feb 2023",
+];
+List<double>gradeMarks = [
+  95,
+  75,
+  65,
+  45,
+  98,
+];
 
-  @override
-  Widget build(BuildContext context) {
-    return SvgPicture.string(
-      svgString,
-      width: size,
-      height: size,
-      color: color,
-    );
-  }
-}
+
 const KPrimaryColor = Color(0xff225C8B);
 
