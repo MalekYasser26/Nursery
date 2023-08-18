@@ -134,12 +134,12 @@ List<String> quizzesDate = [
   "12 Feb 2023",
   "16 Feb 2023",
 ];
-List<double>gradeMarks = [
-  95,
-  75,
-  65,
-  45,
-  98,
+List<double>answeredQuestionsList = [
+  13,
+  11,
+  8,
+  5,
+  15,
 ];
 
 

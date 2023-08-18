@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
 import 'package:nursery/views/Widgets/AnnouncementWidget.dart';
+import 'package:nursery/views/Widgets/QuizWidget.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../../core/utils/assets.dart';
@@ -145,7 +146,7 @@ class _QuizViewState extends State<QuizView> {
                               padding:  EdgeInsets.only(top: 1.h),
                               child: ListView.separated(
                                 physics: NeverScrollableScrollPhysics(),
-                                  itemBuilder: (context, index) =>AnnounceWidget(text:quizzesTXT[index] ,time:"10:00 am" ,
+                                  itemBuilder: (context, index) =>QuizWidget(text:quizzesTXT[index] ,time:"10:00 am" ,
                                     date:quizzesDate[index] ,imagePath:quizzesImgs[index],),
                                   separatorBuilder:(context, index) =>  SizedBox(height: 1.h,),
                                   itemCount: ReportTXT.length),
@@ -163,9 +164,9 @@ class _QuizViewState extends State<QuizView> {
                               child: ListView.separated(
                                 physics: NeverScrollableScrollPhysics(),
                                   itemBuilder: (context, index) => GradeWidget(text:quizzesTXT[index] ,
-                                   imagePath:quizzesImgs[index],index: index, ),
+                                   imagePath:quizzesImgs[index],index: index, answeredQuestions:answeredQuestionsList[index] , ),
                                   separatorBuilder:(context, index) =>  SizedBox(height: 1.h,),
-                                  itemCount: ReportTXT.length),
+                                  itemCount: quizzesTXT.length),
                             ),
                           ),
 

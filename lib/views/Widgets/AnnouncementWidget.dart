@@ -74,10 +74,6 @@ class AnnounceWidget extends StatelessWidget {
           ],
         ),
       ),
-        Positioned(
-            right: 6.w,
-            top: 1.5.h,
-            child: Text("${questions} Questions",style: GoogleFonts.poppins(color: AppColors.blueCol,),))
     ]
     );
   }
