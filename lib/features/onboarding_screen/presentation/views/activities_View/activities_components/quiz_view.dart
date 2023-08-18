@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
-import 'package:nursery/views/Widgets/AnnouncementWidget.dart';
 import 'package:nursery/views/Widgets/QuizWidget.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../../../../core/utils/assets.dart';
-import '../../../../../../views/Widgets/ActivityItem.dart';
 import '../../../../../../views/Widgets/GradeWidget.dart';
 
 class QuizView extends StatefulWidget {
