@@ -141,6 +141,18 @@ List<double>answeredQuestionsList = [
   5,
   15,
 ];
+List<String>headerEvents =[
+  "Annual day",
+  "Next parenting meeting",
+  "Children’s Day"
+];
+List<String>imgEvents = [
+  AssetsData.event1,
+  AssetsData.event2,
+  AssetsData.event3,
+
+];
+String subtextEvent = "Establish a medium for seamless parent teacher\ncommunication, help parents and teachers\ncollaborate and communicate efficiently.";
 
 
 const KPrimaryColor = Color(0xff225C8B);

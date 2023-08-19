@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:meta/meta.dart';
 import 'package:nursery/cust_icon_icons.dart';
-import 'package:nursery/views/screens/CalendarScreen.dart';
+import 'package:nursery/views/screens/CalendarScreen/CalendarScreen.dart';
 import 'package:nursery/views/screens/SettingsScreen.dart';
 import '../features/onboarding_screen/presentation/views/activities_View/activities-view.dart';
 import '../views/screens/HomeScreen/HomeScreen.dart';

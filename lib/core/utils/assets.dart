@@ -24,6 +24,9 @@ class AssetsData{
   static const gal1='assets/images/Gallery/Gallery1.png';
   static const gal2='assets/images/Gallery/Gallery2.png';
   static const gal3='assets/images/Gallery/Gallery3.png';
+  static const event1='assets/images/Gallery/Gallery1Full.png';
+  static const event2='assets/images/Gallery/event2.png';
+  static const event3='assets/images/Gallery/event3.png';
   static const logo='assets/images/img_16.png';
   static const happy='assets/images/happy.png';
   static const sad='assets/images/sad.png';
