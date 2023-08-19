@@ -21,10 +21,10 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   @override
   void initState() {
     super.initState();
-    final animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
-    final CircanimationController = AnimationController(vsync: this, duration: Duration(milliseconds: 2500));
-    final BottomLogoAnimationController = AnimationController(vsync: this, duration: Duration(milliseconds: 2700));
-    final ShapesAnimationController = AnimationController(vsync: this, duration: Duration(seconds: 3));
+    final animationController = AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    final CircanimationController = AnimationController(vsync: this, duration: const Duration(milliseconds: 2500));
+    final BottomLogoAnimationController = AnimationController(vsync: this, duration: const Duration(milliseconds: 2700));
+    final ShapesAnimationController = AnimationController(vsync: this, duration: const Duration(seconds: 3));
     AnimatedController = CustAnimation(animationController);
     CircAnimatedController = CustAnimation(CircanimationController);
     BottomLogoAnimatedController = CustAnimation(BottomLogoAnimationController);
@@ -34,8 +34,8 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     CircanimationController.forward();
     BottomLogoAnimationController.forward();
     ShapesAnimationController.forward();
-    Future.delayed(Duration(milliseconds:4300 ),
-          () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>OnBoardingView() ,)),
+    Future.delayed(const Duration(milliseconds:4300 ),
+          () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>const OnBoardingView() ,)),
     );
   }
 
@@ -59,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Spacer(),
+              const Spacer(),
               Container(
                 child: Column(
                   children: [
@@ -102,7 +102,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 height: 25.h,
               ),
 
-              Spacer(),
+              const Spacer(),
 
             ],
           ), // logo animation
