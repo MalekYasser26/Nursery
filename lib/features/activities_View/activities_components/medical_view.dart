@@ -51,7 +51,9 @@ class MedicalView extends StatelessWidget {
                 Row(
                   mainAxisAlignment:MainAxisAlignment.start,
                   children: [
-                    IconButton(onPressed: (){},
+                    IconButton(onPressed: (){
+                      Navigator.pop(context);
+                    },
                         icon: const Icon(Icons.arrow_back_ios,size: 20,weight: 10,
                           color: Color(0xff225C8B),)),
                     Text("Medical",style: GoogleFonts.poppins(

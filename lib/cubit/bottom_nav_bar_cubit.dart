@@ -19,6 +19,7 @@ class BottomNavBarCubit extends Cubit<BottomNavBarState> {
     const HomeScreen(),
     ActivitiesView(),
     const CalendarScreen(),
+
   ];
 
   List<GButton>BotNavIcons=[

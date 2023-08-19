@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/views/Widgets/CalendarEventWidget.dart';
+import 'package:nursery/views/Widgets/TableCalendarWidget.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../constants/constants.dart';
@@ -94,7 +95,40 @@ class CalendarScreen extends StatelessWidget {
                             separatorBuilder: (context, index) => SizedBox(height: 5.h,),
                             itemCount: headerEvents.length,
                         physics: BouncingScrollPhysics()),
-                        Text("PLACEHOLDER"),
+                        SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Text("Please select your child that you want to see its attendance",
+                                style: GoogleFonts.poppins(fontSize: 13.sp,fontWeight: FontWeight.w600),),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 15.h,
+                                    width: 42.w,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8)
+                                    ),
+                                    child: Image.asset('assets/images/Girl.png',width:double.infinity),
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    height: 15.h,
+                                    width: 42.w,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10)
+                                    ),
+                                    child: Image.asset('assets/images/boy.png',width: double.infinity,),
+                                  )
+                                ],
+                              ),
+                              SizedBox(height: 2.h,),
+                              TableCalendarWidget(),
+                              SizedBox(height: 1.h,)
+
+
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
