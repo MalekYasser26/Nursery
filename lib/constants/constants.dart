@@ -157,3 +157,4 @@ String subtextEvent = "Establish a medium for seamless parent teacher\ncommunica
 
 const KPrimaryColor = Color(0xff225C8B);
 
+const greenColor = Color(0xff8BD399);
