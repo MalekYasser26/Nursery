@@ -151,7 +151,7 @@ class _BookingRequestBodyState extends State<BookingRequestBody> {
                                     padding: const EdgeInsets.all(8),
                                     child: Row(
                                       children: [
-                                        Text("Child name",
+                                        Text("Enter number of days",
                                           style: GoogleFonts.poppins(
                                               textStyle: const TextStyle(
                                                   fontSize: 14,fontWeight:FontWeight.w500
