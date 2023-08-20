@@ -154,7 +154,44 @@ List<String>imgEvents = [
 ];
 String subtextEvent = "Establish a medium for seamless parent teacher\ncommunication, help parents and teachers\ncollaborate and communicate efficiently.";
 
+final List<DateTime> attended = [
+  DateTime(2023, 8, 1),
+  DateTime(2023, 8, 2),
+  DateTime(2023, 8, 3),
+  DateTime(2023, 8, 6),
+  DateTime(2023, 8, 7),
+  DateTime(2023, 8, 8),
+  DateTime(2023, 8, 9),
+  DateTime(2023, 8, 10),
+  DateTime(2023, 8, 13),
+  DateTime(2023, 8, 15),
+  DateTime(2023, 8, 16),
+  DateTime(2023, 8, 17),
+  DateTime(2023, 8, 20),
+  DateTime(2023, 8, 21),
+  DateTime(2023, 8, 23),
+  DateTime(2023, 8, 24),
+  DateTime(2023, 8, 27),
+  DateTime(2023, 8, 28),
+  DateTime(2023, 8, 30),
+  DateTime(2023, 8, 31),
+];
+final List<DateTime> absent =[
+  DateTime(2023, 8, 22),
+  DateTime(2023, 8, 29),
+  DateTime(2023, 8, 14),
+];
+final List<DateTime>holiday=[
+  DateTime(2023, 8, 4),
+  DateTime(2023, 8, 5),
+  DateTime(2023, 8, 11),
+  DateTime(2023, 8, 12),
+  DateTime(2023, 8, 18),
+  DateTime(2023, 8, 19),
+  DateTime(2023, 8, 25),
+  DateTime(2023, 8, 26),
 
+];
 const KPrimaryColor = Color(0xff225C8B);
 
 const greenColor = Color(0xff8BD399);

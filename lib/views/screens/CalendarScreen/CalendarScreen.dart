@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/views/Widgets/CalendarEventWidget.dart';
+import 'package:nursery/views/Widgets/CalendarSummaryWidget.dart';
 import 'package:nursery/views/Widgets/TableCalendarWidget.dart';
+import 'package:nursery/views/Widgets/calendarAttendenceWidget.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../constants/constants.dart';
@@ -122,8 +124,48 @@ class CalendarScreen extends StatelessWidget {
                                 ],
                               ),
                               SizedBox(height: 2.h,),
-                              TableCalendarWidget(),
-                              SizedBox(height: 1.h,)
+                              TableCalendarWidget(attended: attended,absent: absent,holiday: holiday),
+                              SizedBox(height: 1.h,),
+                              Padding(
+                                padding:  EdgeInsets.symmetric(horizontal: 4.w),
+                                child: Divider(color: Colors.grey),
+                              ),
+                              Padding(
+                                padding:  EdgeInsets.symmetric(horizontal: 4.w),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    CalendarAttendance(text: "Present", color: AppColors.blueCol),
+                                    CalendarAttendance(text: "Absent", color: AppColors.redCol),
+                                    CalendarAttendance(text: "Holiday", color: AppColors.yellowCol),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 2.h,),
+
+                                 Column(
+                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                  Row(
+                                    children: [
+                                      Text("Attendance Summary",style: GoogleFonts.poppins(fontWeight: FontWeight.w600,fontSize: 15.sp),),
+                                    ],
+                                  ),
+                                  SizedBox(height: 2.h,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      CalendarSummary(days: attended.length, status: "Absent",color: AppColors.blueCol,),
+                                      CalendarSummary(days: absent.length, status: "Absent",color: AppColors.redCol,),
+                                      CalendarSummary(days: holiday.length, status: "Absent",color: AppColors.orangeCol,)
+
+                                    ],
+                                  ),
+                                    SizedBox(height: 2.h,),
+
+                                  ],
+                                ),
+
 
 
                             ],

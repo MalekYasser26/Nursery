@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nursery/constants/constants.dart';
+import 'package:nursery/features/activities_View/activities-view.dart';
 import 'package:nursery/views/screens/BottomNavBarScreen.dart';
+import 'package:nursery/views/screens/HomeScreen/HomeScreen.dart';
 import 'package:sizer/sizer.dart';
 
 class FillFormConfirm extends StatelessWidget {
@@ -80,7 +82,7 @@ class FillFormConfirm extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const BottomNavBarScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>  BottomNavBarScreen()));
                       },
                       child: Container(
                         height:5.h,

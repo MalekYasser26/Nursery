@@ -23,6 +23,7 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: SafeArea(
         child: Padding(
           padding:  EdgeInsets.symmetric(horizontal: 4.0.w,vertical: 1.6.h),
