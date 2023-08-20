@@ -85,7 +85,6 @@ class CalendarScreen extends StatelessWidget {
                     child: TabBarView(
                       children: [
                         ListView.separated(
-
                           padding: EdgeInsets.only(bottom: 6.h),
                             itemBuilder: (context, index) => CalendarEvent(
                                 date: "15 Jan 2023",
@@ -98,6 +97,7 @@ class CalendarScreen extends StatelessWidget {
                             itemCount: headerEvents.length,
                         physics: BouncingScrollPhysics()),
                         SingleChildScrollView(
+                          physics: BouncingScrollPhysics(),
                           child: Column(
                             children: [
                               Text("Please select your child that you want to see its attendance",
@@ -137,7 +137,7 @@ class CalendarScreen extends StatelessWidget {
                                   children: [
                                     CalendarAttendance(text: "Present", color: AppColors.blueCol),
                                     CalendarAttendance(text: "Absent", color: AppColors.redCol),
-                                    CalendarAttendance(text: "Holiday", color: AppColors.yellowCol),
+                                    CalendarAttendance(text: "Holiday", color: AppColors.orangeCol),
                                   ],
                                 ),
                               ),
@@ -155,9 +155,9 @@ class CalendarScreen extends StatelessWidget {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      CalendarSummary(days: attended.length, status: "Absent",color: AppColors.blueCol,),
+                                      CalendarSummary(days: attended.length, status: "Present",color: AppColors.blueCol,),
                                       CalendarSummary(days: absent.length, status: "Absent",color: AppColors.redCol,),
-                                      CalendarSummary(days: holiday.length, status: "Absent",color: AppColors.orangeCol,)
+                                      CalendarSummary(days: holiday.length, status: "Holiday",color: AppColors.orangeCol,)
 
                                     ],
                                   ),

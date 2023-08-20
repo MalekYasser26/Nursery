@@ -15,10 +15,12 @@ class DailyReportScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Padding(
             padding:EdgeInsets.symmetric(horizontal: 4.w),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 SizedBox(
                   height: 1.9.h,
@@ -77,6 +79,8 @@ class DailyReportScreen extends StatelessWidget {
                   height: 55.h,
                   width: double.infinity,
                   child: ListView.separated(
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
                       itemBuilder: (context, index) =>ActItem(action:ReportTXT[index] ,time:ReportTime[index] ,
                         color:ReportColors[index] ,img:ReportIcons[index] ,),
                       separatorBuilder:(context, index) =>  SizedBox(height: 1.h,),

@@ -30,7 +30,9 @@ class _TableCalendarWidgetState extends State<TableCalendarWidget> {
       children: [
         Container(
           child: TableCalendar(
+            availableGestures: AvailableGestures.horizontalSwipe,
             calendarBuilders: CalendarBuilders(
+
               defaultBuilder: (context, day, focusedDay) {
                 for (DateTime d in widget.attended) {
 
@@ -62,7 +64,7 @@ class _TableCalendarWidgetState extends State<TableCalendarWidget> {
                           ),
                         CircleAvatar(
                           radius: 1.w,
-                          backgroundColor: AppColors.greenCol,
+                          backgroundColor: AppColors.blueCol,
                         )
                       ],
                     );
