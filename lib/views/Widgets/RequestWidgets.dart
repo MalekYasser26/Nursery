@@ -58,7 +58,7 @@ class RequestWidgets extends StatelessWidget {
               Text(
                 HomeScreenTXT[index],
                 style: GoogleFonts.poppins(
-                  fontSize: 9.sp,
+                  fontSize: 3.w,
                   fontWeight: FontWeight.w600
                 ),
                 textAlign: TextAlign.center,

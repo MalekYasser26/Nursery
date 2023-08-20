@@ -23,7 +23,7 @@ var percentageGrade = answeredQuestionsList[index]/15*100 ;
     return Stack(
         children:[
           Card(
-            elevation: 4, // Customize elevation as needed
+            elevation: 2, // Customize elevation as needed
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),

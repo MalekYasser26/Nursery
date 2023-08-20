@@ -23,7 +23,6 @@ class IssueScreenBody extends StatelessWidget {
                 const Spacer(),
                 InkWell(
                   onTap: (){
-                    //home screen
                   },
                   child: Container(
                     height: 4.h,
@@ -52,7 +51,7 @@ class IssueScreenBody extends StatelessWidget {
               mainAxisAlignment:MainAxisAlignment.start,
               children: [
                 IconButton(onPressed: (){
-                  //     Navigator.pushReplacement(context,MaterialPageRoute(builder: (ctx)=> const HomeScreen()));
+                    Navigator.pop(context);
                 },
                     icon: const Icon(Icons.arrow_back_ios,size: 20,weight: 10,
                       color: Color(0xff225C8B),)),

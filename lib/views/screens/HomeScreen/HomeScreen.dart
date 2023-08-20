@@ -104,7 +104,7 @@ class HomeScreen extends StatelessWidget {
                   ],
               ),
                        SizedBox(height : 1.h),
-                       Text("What's Malak doing now ?",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w600 , fontSize: 15.sp),),
+                       Text("What's Malak doing now ?",style: GoogleFonts.poppins(color: Colors.black,fontWeight: FontWeight.w600 , fontSize: 5.w),),
                        SizedBox(height : 1.h),
                        Container(
                          decoration: const BoxDecoration(
@@ -172,9 +172,11 @@ class HomeScreen extends StatelessWidget {
                        ),
                        SizedBox(height: 2.h,),
                        Text("Announcements",style: GoogleFonts.poppins(fontSize: 15.sp,fontWeight: FontWeight.w600),),
-                       AnnounceWidget(imagePath: AssetsData.logo, text: "Next parenting meeting", date: "18 Feb 2023",time: "10:00 am",)
-                      , AnnounceWidget(imagePath: AssetsData.logo, text: "Children’s Day", date: "15 Mar 2023",time: "08:00 am",)
-                     ,  AnnounceWidget(imagePath: AssetsData.logo, text: "Annual Day", date: "18 Feb 2023",time: "08:00 am",)
+                       AnnounceWidget(imagePath: AssetsData.logo, text: "Next parenting meeting", date: "18 Feb 2023",time: "10:00 am",),
+                       SizedBox(height: 1.h,),
+                       AnnounceWidget(imagePath: AssetsData.logo, text: "Children’s Day", date: "15 Mar 2023",time: "08:00 am",),
+                       SizedBox(height: 1.h,),
+                       AnnounceWidget(imagePath: AssetsData.logo, text: "Annual Day", date: "18 Feb 2023",time: "08:00 am",)
 
 
 

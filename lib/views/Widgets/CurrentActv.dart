@@ -44,17 +44,17 @@ class CurrentActv extends StatelessWidget {
             SizedBox(height: 1.2.h,),
              Text(
                     text,
-                    style: GoogleFonts.poppins(fontSize: 12.sp, fontWeight: FontWeight.w600),
+                    style: GoogleFonts.poppins(fontSize: 4.w, fontWeight: FontWeight.w600),
                   ),
                   SizedBox(height: 1.h),
                   Text(
                     date,
-                    style: GoogleFonts.poppins(fontSize: 11.sp, fontWeight: FontWeight.w400),
+                    style: GoogleFonts.poppins(fontSize: 4.w, fontWeight: FontWeight.w400),
                   ),
                   SizedBox(height: 1.h),
                   Text(
                     subtext,
-                    style: GoogleFonts.poppins(fontSize: 8.sp, color: Colors.grey,fontWeight: FontWeight.w300),
+                    style: GoogleFonts.poppins(fontSize: 2.8.w, color: Colors.grey,fontWeight: FontWeight.w300),
                 ),
 
           ],

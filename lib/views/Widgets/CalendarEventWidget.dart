@@ -64,13 +64,13 @@ class CalendarEvent extends StatelessWidget {
         Positioned(
             bottom: 17.h,
             left: 5.w,
-            child: Text("$header",style: GoogleFonts.poppins(fontWeight: FontWeight.w700,color: Colors.white,fontSize: 15.sp),)),
+            child: Text("$header",style: GoogleFonts.poppins(fontWeight: FontWeight.w700,color: Colors.white,fontSize: 5.w),)),
         Positioned(
           bottom: 9.h,
           left: 5.w,
           child: Container(
             child: Text("$subtext",
-                style: GoogleFonts.poppins(fontWeight: FontWeight.w400,color: Colors.white,fontSize: 10.sp),softWrap: true),
+                style: GoogleFonts.poppins(fontWeight: FontWeight.w400,color: Colors.white,fontSize: 3.2.w),softWrap: true),
           ),
         ),
         Positioned(
