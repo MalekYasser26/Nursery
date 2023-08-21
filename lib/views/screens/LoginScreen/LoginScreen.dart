@@ -75,7 +75,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding:  EdgeInsets.symmetric(horizontal: 3.w),
                 child: const PassWidgetLogin(),
               ),
-                  SizedBox(height: 1.h,),
                   Padding(
                     padding:  EdgeInsets.only(left: 2.0.w,right: 5.w),
                     child: Row(

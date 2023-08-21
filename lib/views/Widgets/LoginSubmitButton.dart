@@ -14,7 +14,7 @@ class LoginButton extends StatelessWidget {
       child: InkWell(
         onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavBarScreen() ,)),
         child: Container(
-        height: 5.h,
+        height: 7.h,
         width:double.infinity,
         decoration: BoxDecoration(
           color: AppColors.blueCol,

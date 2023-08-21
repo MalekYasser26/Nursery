@@ -1000,7 +1000,7 @@ class _BookingRequestBodyState extends State<BookingRequestBody> {
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const BookingScreen()));
                 },
                 child: Container(
-                  height:5.h,
+                  height:7.h,
                   width:87.w,
                   decoration:  BoxDecoration(
                       borderRadius: BorderRadius.circular(8),

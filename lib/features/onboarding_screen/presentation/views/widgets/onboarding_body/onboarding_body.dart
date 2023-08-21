@@ -74,7 +74,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const LoginScreen()));
                  },
                  child: Container(
-                   height:5.h,
+                   height:7.h,
                    width:87.w,
                    decoration:  BoxDecoration(
                        borderRadius: BorderRadius.circular(8),

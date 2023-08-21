@@ -162,7 +162,7 @@ class IssueScreenBody extends StatelessWidget {
                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const IssueConfirmScreen()));
               },
               child: Container(
-                height:5.h,
+                height:7.h,
                 width:87.w,
                 decoration:  BoxDecoration(
                     borderRadius: BorderRadius.circular(8),

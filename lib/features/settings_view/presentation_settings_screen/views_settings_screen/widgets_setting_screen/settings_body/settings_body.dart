@@ -92,7 +92,7 @@ class SettingsScreenBody extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Image.asset("assets/images/changeicon.png",height:6.h,width: 6.w,),
+                      Image.asset("assets/images/changeicon.png",height:4.h,width: 4.w,),
                       const Spacer(),
                       Text("Change",style: GoogleFonts.josefinSans(
                           fontWeight: FontWeight.w400,

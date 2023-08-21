@@ -17,7 +17,7 @@ class BasicButton extends StatelessWidget {
     return InkWell(
       onTap: () => Navigator.push(context, MaterialPageRoute(builder: route)),
       child: Container(
-        height: 5.h,
+        height: 7.h,
         width: double.infinity,
         decoration: BoxDecoration(
           color: color,

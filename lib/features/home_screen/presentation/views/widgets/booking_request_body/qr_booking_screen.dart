@@ -61,7 +61,7 @@ class QrScreen extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> const BottomNavBarScreen()));
               },
               child: Container(
-                height:5.h,
+                height:7.h,
                 width:87.w,
                 decoration:  BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
@@ -85,7 +85,7 @@ class QrScreen extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> const BottomNavBarScreen()));
               },
               child: Container(
-                height:5.h,
+                height:7.h,
                 width:87.w,
                 decoration:  BoxDecoration(
                     borderRadius: BorderRadius.circular(8),

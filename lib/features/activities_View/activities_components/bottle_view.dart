@@ -92,9 +92,6 @@ class BottleView extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(
-                          color: Colors.grey
-                      )
                   ),
                   height: 6.h,
                   width: 100.w,
