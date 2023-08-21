@@ -22,7 +22,7 @@ class AnnounceWidget extends StatelessWidget {
     return Stack(
       children:[
         Card(
-        elevation: 4, // Customize elevation as needed
+        elevation: 2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),

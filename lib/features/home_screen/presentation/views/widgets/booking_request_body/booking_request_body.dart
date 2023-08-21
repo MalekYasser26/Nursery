@@ -92,223 +92,220 @@ class _BookingRequestBodyState extends State<BookingRequestBody> {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Expanded(
-                  flex: 5,
-                  child: Container(
-                      padding: const EdgeInsets.only(left: 5),
-                      height: selectedRadio==1?40.h: 27.h,
-                      width: 150.w,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow:  [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(.3),
-                            blurRadius: 5.0, // soften the shadow
-                            spreadRadius: 1, //extend the shadow
-                            offset: const Offset(
-                              2.0, // Move to right 5  horizontally
-                              2.0, // Move to bottom 5 Vertically
-                            ),
-                          )
-                        ],
-                        borderRadius: BorderRadius.circular(8.sp),
-                      ),
-                      child:  Column(
-                        children: [
-                          selectedRadio ==1?
-                          Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Radio(
-                                      visualDensity: const VisualDensity(horizontal: -4),
-                                      activeColor: KPrimaryColor,
-                                      value: 1,
-                                      groupValue: selectedRadio,
-                                      onChanged: (value){
-                                        setState(() {
-                                          selectedRadio=value;
-                                        });
-                                      }
-                                  ),
-                                  Text("Day",
-                                    style: GoogleFonts.poppins(
-                                      textStyle: const TextStyle(fontSize: 16
-                                      ),
-                                      color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
-                                      fontWeight: selectedRadio ==1 ? FontWeight.w500 : FontWeight.w400,
-                                    ),),
-                                  Text(" ( 100 EGP per day)",
-                                    style: GoogleFonts.poppins(
-                                      textStyle: const TextStyle(
-                                          fontWeight: FontWeight.w400, fontSize: 12
-                                      ),
-                                      color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
-
-                                    ),),
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8),
-                                    child: Row(
-                                      children: [
-                                        Text("Enter number of days",
-                                          style: GoogleFonts.poppins(
-                                              textStyle: const TextStyle(
-                                                  fontSize: 14,fontWeight:FontWeight.w500
-                                              )
-                                          ),),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 14.0,left: 8),
-                                    child: TextFormField(
-                                      decoration: InputDecoration(
-                                          contentPadding: const EdgeInsets.only(top: 2,left: 12),
-                                          border: OutlineInputBorder(
-                                              borderRadius: BorderRadius.circular(8)
-                                          ),
-                                          hintText: "EX. 3 days",
-                                          hintStyle: GoogleFonts.poppins(
-                                              textStyle: const TextStyle(
-                                                  color: Color(0xffBCBCBC),
-                                                  fontSize: 12,fontWeight: FontWeight.w400
-                                              )
-                                          )
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ): Row(
-                            children: [
-                              Radio(
-                                  visualDensity: const VisualDensity(horizontal: -4),
-                                  activeColor: KPrimaryColor,
-                                  value: 1,
-                                  groupValue: selectedRadio,
-                                  onChanged: (value){
-                                    setState(() {
-                                      selectedRadio=value;
-                                    });
-                                  }
-                              ),
-                              Text("Day",
-                                style: GoogleFonts.poppins(
-                                  textStyle: const TextStyle(fontSize: 16
-                                  ),
-                                  color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
-                                  fontWeight: selectedRadio ==1 ? FontWeight.w500 : FontWeight.w400,
-                                ),),
-                              Text(" ( 100 EGP per day)",
-                                style: GoogleFonts.poppins(
-                                  textStyle: const TextStyle(
-                                      fontWeight: FontWeight.w400, fontSize: 12
-                                  ),
-                                  color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
-
-                                ),),
-                            ],
+                child: Container(
+                    padding: const EdgeInsets.only(left: 5),
+                    height: selectedRadio==1?40.h: 27.h,
+                    width: 150.w,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow:  [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(.3),
+                          blurRadius: 5.0, // soften the shadow
+                          spreadRadius: 1, //extend the shadow
+                          offset: const Offset(
+                            2.0, // Move to right 5  horizontally
+                            2.0, // Move to bottom 5 Vertically
                           ),
-
-                          Row(
-                            children: [
-                              Radio(
-                                  visualDensity: const VisualDensity(horizontal: -4),
-                                  activeColor: KPrimaryColor,
-                                  value: 2,
-                                  groupValue: selectedRadio,
-                                  onChanged: (value){
-                                    setState(() {
-                                      selectedRadio=value;
-                                    });
-                                  }
-                              ),
-                              Text("Week",
-                                style: GoogleFonts.poppins(
-                                    textStyle: const TextStyle(
-                                        fontSize: 16
+                        )
+                      ],
+                      borderRadius: BorderRadius.circular(8.sp),
+                    ),
+                    child:  Column(
+                      children: [
+                        selectedRadio ==1?
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Radio(
+                                    visualDensity: const VisualDensity(horizontal: -4),
+                                    activeColor: KPrimaryColor,
+                                    value: 1,
+                                    groupValue: selectedRadio,
+                                    onChanged: (value){
+                                      setState(() {
+                                        selectedRadio=value;
+                                      });
+                                    }
+                                ),
+                                Text("Day",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: const TextStyle(fontSize: 16
                                     ),
-                                    color: selectedRadio == 2 ? KPrimaryColor : Colors.black,
-                                    fontWeight: selectedRadio ==2 ? FontWeight.w500 : FontWeight.w400
-                                ),),
-                              Text(" ( 400 EGP )",
-                                style: GoogleFonts.poppins(
+                                    color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
+                                    fontWeight: selectedRadio ==1 ? FontWeight.w500 : FontWeight.w400,
+                                  ),),
+                                Text(" ( 100 EGP per day)",
+                                  style: GoogleFonts.poppins(
+                                    textStyle: const TextStyle(
+                                        fontWeight: FontWeight.w400, fontSize: 12
+                                    ),
+                                    color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
+
+                                  ),),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8),
+                                  child: Row(
+                                    children: [
+                                      Text("Enter number of days",
+                                        style: GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                fontSize: 14,fontWeight:FontWeight.w500
+                                            )
+                                        ),),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 14.0,left: 8),
+                                  child: TextFormField(
+                                    decoration: InputDecoration(
+                                        contentPadding: const EdgeInsets.only(top: 2,left: 12),
+                                        border: OutlineInputBorder(
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),
+                                        hintText: "EX. 3 days",
+                                        hintStyle: GoogleFonts.poppins(
+                                            textStyle: const TextStyle(
+                                                color: Color(0xffBCBCBC),
+                                                fontSize: 12,fontWeight: FontWeight.w400
+                                            )
+                                        )
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ): Row(
+                          children: [
+                            Radio(
+                                visualDensity: const VisualDensity(horizontal: -4),
+                                activeColor: KPrimaryColor,
+                                value: 1,
+                                groupValue: selectedRadio,
+                                onChanged: (value){
+                                  setState(() {
+                                    selectedRadio=value;
+                                  });
+                                }
+                            ),
+                            Text("Day",
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(fontSize: 16
+                                ),
+                                color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
+                                fontWeight: selectedRadio ==1 ? FontWeight.w500 : FontWeight.w400,
+                              ),),
+                            Text(" ( 100 EGP per day)",
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    fontWeight: FontWeight.w400, fontSize: 12
+                                ),
+                                color: selectedRadio == 1 ? KPrimaryColor : Colors.black,
+
+                              ),),
+                          ],
+                        ),
+
+                        Row(
+                          children: [
+                            Radio(
+                                visualDensity: const VisualDensity(horizontal: -4),
+                                activeColor: KPrimaryColor,
+                                value: 2,
+                                groupValue: selectedRadio,
+                                onChanged: (value){
+                                  setState(() {
+                                    selectedRadio=value;
+                                  });
+                                }
+                            ),
+                            Text("Week",
+                              style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
-                                      fontWeight:FontWeight.w400,fontSize: 12
+                                      fontSize: 16
                                   ),
                                   color: selectedRadio == 2 ? KPrimaryColor : Colors.black,
-                                ),),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Radio(
-                                  visualDensity: const VisualDensity(horizontal: -4),
-                                  activeColor: KPrimaryColor,
-                                  value: 3,
-                                  groupValue: selectedRadio,
-                                  onChanged: (value){
-                                    setState(() {
-                                      selectedRadio=value;
-                                    });
-                                  }
-                              ),
-                              Text("Month",
-                                style: GoogleFonts.poppins(
-                                    textStyle: const TextStyle(
-                                        fontSize: 16
-                                    ),
-                                    color: selectedRadio == 3 ? KPrimaryColor : Colors.black,
-                                    fontWeight: selectedRadio ==3 ? FontWeight.w500 : FontWeight.w400
-                                ),),
-                              Text(" ( 1800 EGP )",
-                                style: GoogleFonts.poppins(
+                                  fontWeight: selectedRadio ==2 ? FontWeight.w500 : FontWeight.w400
+                              ),),
+                            Text(" ( 400 EGP )",
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    fontWeight:FontWeight.w400,fontSize: 12
+                                ),
+                                color: selectedRadio == 2 ? KPrimaryColor : Colors.black,
+                              ),),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Radio(
+                                visualDensity: const VisualDensity(horizontal: -4),
+                                activeColor: KPrimaryColor,
+                                value: 3,
+                                groupValue: selectedRadio,
+                                onChanged: (value){
+                                  setState(() {
+                                    selectedRadio=value;
+                                  });
+                                }
+                            ),
+                            Text("Month",
+                              style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
-                                      fontWeight:FontWeight.w400,fontSize: 12
+                                      fontSize: 16
                                   ),
                                   color: selectedRadio == 3 ? KPrimaryColor : Colors.black,
-                                ),),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Radio(
-                                  visualDensity: const VisualDensity(horizontal: -4),
-                                  activeColor: KPrimaryColor,
-                                  value: 4,
-                                  groupValue: selectedRadio,
-                                  onChanged: (value){
-                                    setState(() {
-                                      selectedRadio=value;
-                                    });
-                                  }
-                              ),
-                              Text("Half Month",
-                                style: GoogleFonts.poppins(
-                                    textStyle: const TextStyle(
-                                        fontSize: 16
-                                    ),
-                                    color: selectedRadio == 4 ? KPrimaryColor : Colors.black,
-                                    fontWeight: selectedRadio ==4 ? FontWeight.w500 : FontWeight.w400
-                                ),),
-                              Text(" ( 900 EGP )",
-                                style: GoogleFonts.poppins(
+                                  fontWeight: selectedRadio ==3 ? FontWeight.w500 : FontWeight.w400
+                              ),),
+                            Text(" ( 1800 EGP )",
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    fontWeight:FontWeight.w400,fontSize: 12
+                                ),
+                                color: selectedRadio == 3 ? KPrimaryColor : Colors.black,
+                              ),),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Radio(
+                                visualDensity: const VisualDensity(horizontal: -4),
+                                activeColor: KPrimaryColor,
+                                value: 4,
+                                groupValue: selectedRadio,
+                                onChanged: (value){
+                                  setState(() {
+                                    selectedRadio=value;
+                                  });
+                                }
+                            ),
+                            Text("Half Month",
+                              style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
-                                      fontWeight:FontWeight.w400,fontSize: 12
+                                      fontSize: 16
                                   ),
                                   color: selectedRadio == 4 ? KPrimaryColor : Colors.black,
-                                ),),
-                            ],
-                          ),
+                                  fontWeight: selectedRadio ==4 ? FontWeight.w500 : FontWeight.w400
+                              ),),
+                            Text(" ( 900 EGP )",
+                              style: GoogleFonts.poppins(
+                                textStyle: const TextStyle(
+                                    fontWeight:FontWeight.w400,fontSize: 12
+                                ),
+                                color: selectedRadio == 4 ? KPrimaryColor : Colors.black,
+                              ),),
+                          ],
+                        ),
 
-                        ],
-                      )
-                  ),
+                      ],
+                    )
                 ),
               ),
               Padding(

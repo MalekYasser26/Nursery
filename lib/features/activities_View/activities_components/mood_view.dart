@@ -87,7 +87,10 @@ class _MoodViewState extends State<MoodView> {
                 ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton(
-                    icon: Icon(Icons.keyboard_arrow_down),
+                    icon:Padding(
+                        padding:  EdgeInsets.all(2.w),
+                        child : Icon(Icons.keyboard_arrow_down,size: 35,weight: 5,)
+                    ),
                     isExpanded: true,
                     alignment: Alignment.center,
                     value: dropdownValue3,

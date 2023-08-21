@@ -27,9 +27,9 @@ class MoodItem extends StatelessWidget {
                 SizedBox(height: 1.h,),
                 Row(
                   children: [
-                    Text(time,textAlign: TextAlign.start,style: GoogleFonts.poppins(fontSize: 12.sp,fontWeight: FontWeight.w600),softWrap: true),
+                    Text(time,textAlign: TextAlign.start,style: GoogleFonts.poppins(fontSize: 4.w,fontWeight: FontWeight.w600),softWrap: true),
                     SizedBox(width:1.w),
-                    Text(action,textAlign: TextAlign.start,style: GoogleFonts.poppins(fontSize: 11.sp,fontWeight: FontWeight.w400),softWrap: true),
+                    Text(action,textAlign: TextAlign.start,style: GoogleFonts.poppins(fontSize: 3.5.w,fontWeight: FontWeight.w400),softWrap: true),
                   ],
                 ),
                 SizedBox(height: 1.h,)

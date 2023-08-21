@@ -96,7 +96,10 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                     ),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton(
-                        icon: Icon(Icons.keyboard_arrow_down),
+                        icon: Padding(
+                          padding:  EdgeInsets.only(right: 2.w),
+                          child: Icon(Icons.keyboard_arrow_down),
+                        ),
                         isExpanded: true,
                         alignment: Alignment.center,
                         value: dropdownValue,
@@ -122,7 +125,10 @@ class _EarlyLeaveScreenState extends State<EarlyLeaveScreen> {
                     ),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton(
-                        icon: Icon(Icons.keyboard_arrow_down),
+                        icon: Padding(
+                          padding:  EdgeInsets.only(right: 2.w),
+                          child: Icon(Icons.keyboard_arrow_down),
+                        ),
 
                         isExpanded: true,
                         alignment: Alignment.center,

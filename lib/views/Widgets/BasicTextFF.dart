@@ -22,7 +22,7 @@ class BasicTextFF extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          labelText: fftext,
+          hintText: fftext,
           hintStyle: GoogleFonts.poppins(),
           suffixIcon: suffix != null ? Icon(suffix) : null,
         ),
