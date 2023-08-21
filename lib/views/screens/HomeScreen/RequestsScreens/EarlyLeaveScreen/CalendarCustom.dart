@@ -26,7 +26,7 @@ class _DatePickerCustomState extends State<DatePickerCustom> {
          SizedBox(height: 1.h),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Row(
             children: List.generate(
               lastDayOfMonth.day,

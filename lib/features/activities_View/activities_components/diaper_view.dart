@@ -47,7 +47,10 @@ class DiaperView extends StatelessWidget {
                           )
                         ],
                       ),
-                      child: Image.asset('assets/images/notification.png',),
+                      child: Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: Image.asset('assets/images/notification.png',),
+                      ),
                     ),
                   )
                 ],
@@ -62,7 +65,7 @@ class DiaperView extends StatelessWidget {
                     style: GoogleFonts.poppins(
                         textStyle:  TextStyle(fontWeight: FontWeight.w600,fontSize: 14.sp)
                     ),),
-                  Spacer(),
+                  const Spacer(),
                   Text("15 Feb 2023",
                     style: GoogleFonts.poppins(
                         textStyle:  TextStyle(fontWeight: FontWeight.w400,fontSize: 11.sp,color: Colors.grey)
@@ -75,13 +78,13 @@ class DiaperView extends StatelessWidget {
               ),
               SizedBox(
                 height: 9.h,
-                child: BasicButton(route: (context) => CalendarScreen(), color: AppColors.orangeCol,
+                child: BasicButton(route: (context) => const CalendarScreen(), color: AppColors.orangeCol,
                     Textcolor: Colors.white, TextSt: "2 Wet", borderColor: Colors.transparent , textSize: 16.sp),
               ),
               SizedBox(height: 2.h,),
               SizedBox(
                 height: 9.h,
-                child: BasicButton(route: (context) => CalendarScreen(), color: AppColors.orangeCol,
+                child: BasicButton(route: (context) => const CalendarScreen(), color: AppColors.orangeCol,
                     Textcolor: Colors.white, TextSt: "1 Dirty", borderColor: Colors.transparent , textSize: 16.sp),
               ),
               SizedBox(height: 2.h,),

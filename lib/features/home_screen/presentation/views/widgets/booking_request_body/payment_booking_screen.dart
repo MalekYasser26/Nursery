@@ -51,7 +51,10 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           )
                         ],
                       ),
-                      child: Image.asset('assets/images/notification.png',),
+                      child: Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: Image.asset('assets/images/notification.png',),
+                      ),
                     ),
                   )
                 ],

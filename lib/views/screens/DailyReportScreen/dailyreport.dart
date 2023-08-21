@@ -15,7 +15,7 @@ class DailyReportScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           child: Padding(
             padding:EdgeInsets.symmetric(horizontal: 4.w),
@@ -53,7 +53,10 @@ class DailyReportScreen extends StatelessWidget {
                             )
                           ],
                         ),
-                        child: Image.asset('assets/images/notification.png',),
+                        child: Padding(
+                          padding: const EdgeInsets.all(3.0),
+                          child: Image.asset('assets/images/notification.png',),
+                        ),
                       ),
                     )
                   ],
@@ -67,7 +70,7 @@ class DailyReportScreen extends StatelessWidget {
                       style: GoogleFonts.poppins(
                           textStyle:  TextStyle(fontWeight: FontWeight.w600,fontSize: 14.sp)
                       ),),
-                    Spacer(),
+                    const Spacer(),
                     Text("15 Feb 2023",
                       style: GoogleFonts.poppins(
                           textStyle:  TextStyle(fontWeight: FontWeight.w400,fontSize: 11.sp,color: Colors.grey)
@@ -79,7 +82,7 @@ class DailyReportScreen extends StatelessWidget {
                   height: 55.h,
                   width: double.infinity,
                   child: ListView.separated(
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
                       itemBuilder: (context, index) =>ActItem(action:ReportTXT[index] ,time:ReportTime[index] ,
                         color:ReportColors[index] ,img:ReportIcons[index] ,),
@@ -115,7 +118,7 @@ class DailyReportScreen extends StatelessWidget {
                 SizedBox(
                   height: 2.h,
                 ),
-                BasicButton(route: (context) =>  BottomNavBarScreen(),
+                BasicButton(route: (context) =>  const BottomNavBarScreen(),
                     color: AppColors.orangeCol,
                     Textcolor: Colors.white,
                     TextSt: "Download report",

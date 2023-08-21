@@ -58,9 +58,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Padding(
                     padding:  EdgeInsets.symmetric(horizontal: 3.w),
-                    child: EmailWidgetLogin(),
+                    child: const EmailWidgetLogin(),
                   ),
-
+                   SizedBox(height: 3.h,),
                   Padding(
                 padding:  EdgeInsets.only(left: 6.w),
                 child: Row(
@@ -73,9 +73,9 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
                   Padding(
                 padding:  EdgeInsets.symmetric(horizontal: 3.w),
-                child: PassWidgetLogin(),
+                child: const PassWidgetLogin(),
               ),
-
+                  SizedBox(height: 1.h,),
                   Padding(
                     padding:  EdgeInsets.only(left: 2.0.w,right: 5.w),
                     child: Row(
@@ -90,9 +90,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             padding:  EdgeInsets.symmetric(horizontal: 3.0.w),
                             child: Row(
                               children: [
-                                checked ? Icon(
+                                checked ? const Icon(
                                     Icons.check_box,color: Colors.green,
-                                  ) : Icon( Icons.check_box_outline_blank,),
+                                  ) : const Icon( Icons.check_box_outline_blank,),
 
                                 Text(" Keep me logged in",style:GoogleFonts.josefinSans(
                                   fontSize:12.sp,
@@ -102,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text("Forgot Password?",style:GoogleFonts.josefinSans(
                           fontSize:12.sp,
                           color: AppColors.blueCol
@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
 
-                  LoginButton(),
+                  const LoginButton(),
 
 
 

@@ -22,7 +22,7 @@ class _ClassesViewState extends State<ClassesView> {
     return  Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding:  EdgeInsets.symmetric(horizontal : 4.w),
             child: Column(
@@ -55,7 +55,10 @@ class _ClassesViewState extends State<ClassesView> {
                             )
                           ],
                         ),
-                        child: Image.asset('assets/images/notification.png',),
+                        child: Padding(
+                          padding: const EdgeInsets.all(3.0),
+                          child: Image.asset('assets/images/notification.png',),
+                        ),
                       ),
                     )
                   ],
@@ -70,7 +73,7 @@ class _ClassesViewState extends State<ClassesView> {
                       style: GoogleFonts.poppins(
                           textStyle:  TextStyle(fontWeight: FontWeight.w600,fontSize: 14.sp)
                       ),),
-                    Spacer(),
+                    const Spacer(),
                     Text("15 Feb 2023",
                       style: GoogleFonts.poppins(
                           textStyle:  TextStyle(fontWeight: FontWeight.w400,fontSize: 11.sp,color: Colors.grey)
@@ -88,7 +91,7 @@ class _ClassesViewState extends State<ClassesView> {
                   ),
                   child: DropdownButtonHideUnderline(
                     child: DropdownButton(
-                      icon: Icon(Icons.keyboard_arrow_down),
+                      icon: const Icon(Icons.keyboard_arrow_down),
                       isExpanded: true,
                       alignment: Alignment.center,
                       value: dropdownValue5,
@@ -98,7 +101,7 @@ class _ClassesViewState extends State<ClassesView> {
                           child: Row(
                             children: [
                               SizedBox(width : 1.w),
-                              Icon(Icons.calendar_month,color: Colors.grey),
+                              const Icon(Icons.calendar_month,color: Colors.grey),
                               SizedBox(width: 2.w,),
                               Text(value,style: GoogleFonts.poppins(),),
                             ],
@@ -145,7 +148,7 @@ class _ClassesViewState extends State<ClassesView> {
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(bottom: 1.h),
-                          child: ClassWidget(classMat: "English", classTime: "10:00 am - 10:30 am"),
+                          child: const ClassWidget(classMat: "English", classTime: "10:00 am - 10:30 am"),
                         )),
                   ],
                 ),
@@ -177,7 +180,7 @@ class _ClassesViewState extends State<ClassesView> {
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(bottom: 1.h),
-                          child: ClassWidget(classMat: "English", classTime: "10:00 am - 10:30 am"),
+                          child: const ClassWidget(classMat: "English", classTime: "10:00 am - 10:30 am"),
                         )),
                   ],
                 ),
