@@ -19,7 +19,6 @@ class LoginButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.blueCol,
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: Color(0xff4a4bb7))
         ),
         child: Center(child: Text("Login",style: GoogleFonts.poppins(
           color: Colors.white
